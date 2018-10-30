@@ -1,0 +1,5 @@
+package FindBugs;
+
+public enum FindBugsBugCategory {
+    CORRECTNESS, MT_CORRECTNESS,  BAD_PRACTICE, PERFORMANCE, STYLE, MALICIOUS_CODE, I18N
+}
