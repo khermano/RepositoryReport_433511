@@ -1,34 +1,42 @@
 package Checkstyle;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.util.UUID;
+import javax.persistence.*;
 
 @Entity
+@Table
 public class CheckstyleError {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    private Long id;
+    @Column
     private int column;
+    @Column
     private int line;
+    @Column(nullable = false)
     private String message;
+    @Column(nullable = false)
     private CheckstyleSeverity severity;
+    @Column(nullable = false)
     private String checkSource;
+    @Column(nullable = false)
+    private String fileName;
 
-    public CheckstyleError(int column, int line, String message, CheckstyleSeverity severity, String checkSource) {
-        id = UUID.randomUUID().toString();
+    public CheckstyleError(int column, int line, String message, CheckstyleSeverity severity, String checkSource, String fileName) {
         this.column = column;
         this.line = line;
         this.message = message;
         this.severity = severity;
         this.checkSource = checkSource;
+        this.fileName = fileName;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -70,5 +78,13 @@ public class CheckstyleError {
 
     public void setCheckSource(String checkSource) {
         this.checkSource = checkSource;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }
