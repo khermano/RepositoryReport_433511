@@ -9,7 +9,7 @@ public class CheckstyleFile {
 
     public  CheckstyleFile(String fileName, List<CheckstyleError> errorList) {
         this.fileName = fileName;
-        this.errorList = new ArrayList<>(errorList);
+        this.errorList = new ArrayList<CheckstyleError>(errorList);
     }
 
     public String getFileName() {

@@ -7,16 +7,16 @@ import javax.persistence.*;
 public class CheckstyleError {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     @Column(unique = true, updatable = false, nullable = false)
     private Long id;
-    @Column
+    @Column(name = "classColumn")
     private int column;
-    @Column
+    @Column(name = "classLine")
     private int line;
-    @Column(nullable = false)
+    @Column(name = "errorMessage", nullable = false)
     private String message;
-    @Column(nullable = false)
+    @Column(name = "errorSeverity", nullable = false)
     private CheckstyleSeverity severity;
     @Column(nullable = false)
     private String checkSource;
@@ -86,5 +86,11 @@ public class CheckstyleError {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
+    }
+
+    @Override
+    public String toString() {
+        return "Error id: " + id + ", classColumn: " + column + ", classLine: " + line + ", errorMessage: " + message +
+                ", errorSeverity: " + severity + ", checkSource: " + checkSource + ", fileName: " + fileName;
     }
 }
