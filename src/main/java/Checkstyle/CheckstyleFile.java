@@ -12,6 +12,7 @@ public class CheckstyleFile {
 
     @XmlAttribute(name = "name")
     private String fileName;
+
     @XmlElement(name = "error")
     private List<CheckstyleError> errorList;
 

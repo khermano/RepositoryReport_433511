@@ -1,9 +1,6 @@
 package Checkstyle;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,11 +9,18 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CheckstyleReport {
 
+    @XmlAttribute(name = "version")
+    private float version;
+
     @XmlElement(name = "file")
     private List<CheckstyleFile> fileList;
 
-    public CheckstyleReport(List<CheckstyleFile> fileList) {
-        this.fileList = new ArrayList<CheckstyleFile>(fileList);
+    public float getVersion() {
+        return version;
+    }
+
+    public void setVersion(float version) {
+        this.version = version;
     }
 
     public List<CheckstyleFile> getFileList() {
@@ -25,5 +29,10 @@ public class CheckstyleReport {
 
     public void setFileList(List<CheckstyleFile> fileList) {
         this.fileList = fileList;
+    }
+
+    public CheckstyleReport(float version, List<CheckstyleFile> fileList) {
+        this.version = version;
+        this.fileList = new ArrayList<CheckstyleFile>(fileList);
     }
 }
