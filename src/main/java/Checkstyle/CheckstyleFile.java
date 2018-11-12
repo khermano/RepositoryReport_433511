@@ -1,10 +1,18 @@
 package Checkstyle;
 
+import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "file")
 public class CheckstyleFile {
+
+    @XmlAttribute(name = "name")
     private String fileName;
+    @XmlElement(name = "error")
     private List<CheckstyleError> errorList;
 
     public  CheckstyleFile(String fileName, List<CheckstyleError> errorList) {
@@ -21,7 +29,7 @@ public class CheckstyleFile {
     }
 
     public List<CheckstyleError> getErrorList() {
-        return errorList;
+        return Collections.unmodifiableList(errorList);
     }
 
     public void setErrorList(List<CheckstyleError> errorList) {

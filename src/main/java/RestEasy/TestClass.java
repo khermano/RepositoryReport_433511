@@ -21,10 +21,10 @@ public class TestClass {
     @GET
     @Path("/testError")
     public String returnError() {
-        error = new CheckstyleError(0, 0, "testMessage", CheckstyleSeverity.ignore, "testSource", "testFile");
-        error.setId((long)1);
+        error = new CheckstyleError((byte)0, (byte)0, "testMessage", "ignore", "testSource"/*, "testFile"*/);
         emf.add(error);
-        CheckstyleError error2 = emf.get((long)1);
+        Long id = error.getId();
+        CheckstyleError error2 = emf.get(id);
         return error2.toString();
     }
 
