@@ -27,7 +27,7 @@
          <!-- Properties for Hibernate -->
          <property name="hibernate.hbm2ddl.auto" value="create-drop" />
          <property name="hibernate.show_sql" value="false" />
-         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+         <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
       </properties>
    </persistence-unit>
 </persistence>

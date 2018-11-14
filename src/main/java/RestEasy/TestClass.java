@@ -40,7 +40,7 @@ public class TestClass {
         JAXBContext jc = JAXBContext.newInstance(CheckstyleReport.class);
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
-        CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("src/main/resources/input.xml"));
+        CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("/home/khermano/Devel/RepositoryReport_433511/src/main/resources/input.xml"));
 
         /*List<CheckstyleFile> files = report.getFileList();
         List<CheckstyleError> errors = files.get(0).getErrorList();
