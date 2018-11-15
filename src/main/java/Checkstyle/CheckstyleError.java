@@ -3,47 +3,57 @@ package Checkstyle;
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 
-@Entity
-@Table
+@Entity(name = "CHECKSTYLE")
+@XmlRootElement(name= "error")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "error")
+@XmlType(propOrder = {"line", "column", "message", "severity", "source"})
 public class CheckstyleError {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(unique = true, updatable = false, nullable = false)
+    @Column(name = "errorId", unique = true, updatable = false, nullable = false)
+    @XmlTransient
     private Long id;
-
-    @Column(name = "classColumn")
-    @XmlAttribute()
-    private byte column;
 
     @Column(name = "classLine")
     @XmlAttribute()
     private byte line;
 
-    @Column(name = "errorMessage", nullable = false)
+    @Column(name = "classColumn")
+    @XmlAttribute()
+    private byte column;
+
+    @Column(name = "errorMessage")
     @XmlAttribute()
     private String message;
 
-    @Column(name = "errorSeverity", nullable = false)
+    @Column(name = "errorSeverity")
     @XmlAttribute()
     private String severity;
 
-    @Column(nullable = false)
-    @XmlAttribute(name = "source")
-    private String checkSource;
+    @Column(name = "checkSource")
+    @XmlAttribute()
+    private String source;
 
-    /*@Column(nullable = false)
-    private String fileName;*/
+    /*@ManyToOne(cascade = CascadeType.ALL)
+    @XmlTransient
+    private CheckstyleFile checkstyleFile;
 
-    public CheckstyleError(byte column, byte line, String message, String severity, String checkSource/*, String fileName*/) {
-        this.column = column;
+    @Column(name = "fileName")
+    @XmlTransient
+    private String file =checkstyleFile.getFileName();*/
+
+    public CheckstyleError(byte column, byte line, String message, String severity, String source/*, String file*/) {
         this.line = line;
+        this.column = column;
         this.message = message;
         this.severity = severity;
-        this.checkSource = checkSource;
-        //this.fileName = fileName;
+        this.source = source;
+        //this.file = file;
+    }
+
+    public CheckstyleError() {
+
     }
 
     public Long getId() {
@@ -54,20 +64,20 @@ public class CheckstyleError {
         this.id = id;
     }
 
-    public byte getColumn() {
-        return column;
-    }
-
-    public void setColumn(byte column) {
-        this.column = column;
-    }
-
     public byte getLine() {
         return line;
     }
 
     public void setLine(byte line) {
         this.line = line;
+    }
+
+    public byte getColumn() {
+        return column;
+    }
+
+    public void setColumn(byte column) {
+        this.column = column;
     }
 
     public String getMessage() {
@@ -86,25 +96,25 @@ public class CheckstyleError {
         this.severity = severity;
     }
 
-    public String getCheckSource() {
-        return checkSource;
+    public String getSource() {
+        return source;
     }
 
-    public void setCheckSource(String checkSource) {
-        this.checkSource = checkSource;
+    public void setSource(String source) {
+        this.source = source;
     }
 
-    /*public String getFileName() {
-        return fileName;
+    /*public String getFile() {
+        return file;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
+    public void setFile(String file) {
+        this.file = file;
     }*/
 
     @Override
     public String toString() {
-        return "Error id: " + id + ", classColumn: " + column + ", classLine: " + line + ", errorMessage: " + message +
-                ", errorSeverity: " + severity + ", checkSource: " + checkSource /*+ ", fileName: " + fileName*/;
+        return "Error id: " + id + ", classLine: " + line + ", classColumn: " + column + ", errorMessage: " + message +
+                ", errorSeverity: " + severity + ", checkSource: " + source /*+ ", fileName: " + file*/;
     }
 }

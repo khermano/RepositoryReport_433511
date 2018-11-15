@@ -1,8 +1,8 @@
 package RestEasy;
 
 import Checkstyle.CheckstyleError;
-import Checkstyle.CheckstyleFile;
 import Checkstyle.CheckstyleReport;
+import org.jboss.logging.Logger;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -12,11 +12,12 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
-import java.util.List;
 
 @Stateless
 @Path("test")
 public class TestClass {
+
+    private static final Logger log = Logger.getLogger(TestClass.class);
 
     @EJB
     private EntityManagerFactory emf;
@@ -42,12 +43,13 @@ public class TestClass {
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("/home/khermano/Devel/RepositoryReport_433511/src/main/resources/input.xml"));
 
-        /*List<CheckstyleFile> files = report.getFileList();
-        List<CheckstyleError> errors = files.get(0).getErrorList();
-        CheckstyleError error = errors.get(0).getId();*/
+        //log.info("**************MY ERROR IS: " + report.getFileList().get(0).getErrorList().get(0).toString());
 
+        emf.add(report.getFileList().get(0).getErrorList().get(0));
+        emf.add(report.getFileList().get(0).getErrorList().get(1));
         CheckstyleError error = emf.get(report.getFileList().get(0).getErrorList().get(0).getId());
-        return error.toString();
+        CheckstyleError error2 = emf.get(report.getFileList().get(0).getErrorList().get(1).getId());
+        return error.toString() + "    *******    " + error2.toString();
     }
 
 

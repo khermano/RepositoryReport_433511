@@ -1,7 +1,7 @@
 package Checkstyle;
 
+import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.*;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,6 +12,7 @@ public class CheckstyleReport {
     @XmlAttribute(name = "version")
     private float version;
 
+    //@OneToMany(mappedBy = "checkstyle")
     @XmlElement(name = "file")
     private List<CheckstyleFile> fileList;
 
@@ -29,10 +30,5 @@ public class CheckstyleReport {
 
     public void setFileList(List<CheckstyleFile> fileList) {
         this.fileList = fileList;
-    }
-
-    public CheckstyleReport(float version, List<CheckstyleFile> fileList) {
-        this.version = version;
-        this.fileList = new ArrayList<CheckstyleFile>(fileList);
     }
 }

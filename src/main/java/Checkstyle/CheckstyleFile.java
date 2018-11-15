@@ -1,25 +1,21 @@
 package Checkstyle;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "file")
+//@Entity(name = "ent")
+@XmlRootElement(name = "file")
+@XmlAccessorType(XmlAccessType.FIELD) //@XmlType(name = "file")
 public class CheckstyleFile {
 
     @XmlAttribute(name = "name")
     private String fileName;
 
+    //@OneToMany(mappedBy = "file", cascade = CascadeType.ALL)
     @XmlElement(name = "error")
     private List<CheckstyleError> errorList;
-
-    public  CheckstyleFile(String fileName, List<CheckstyleError> errorList) {
-        this.fileName = fileName;
-        this.errorList = new ArrayList<CheckstyleError>(errorList);
-    }
 
     public String getFileName() {
         return fileName;

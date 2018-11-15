@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd /tmp
 mkdir BachelorThesis4
 cd BachelorThesis4/
 git clone https://github.com/khermano/tyr.git
