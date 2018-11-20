@@ -1,10 +1,8 @@
 package Checkstyle;
 
-import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.*;
 import java.util.Collections;
 import java.util.List;
-
 @XmlRootElement(name = "checkstyle")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CheckstyleReport {
@@ -12,7 +10,6 @@ public class CheckstyleReport {
     @XmlAttribute(name = "version")
     private float version;
 
-    //@OneToMany(mappedBy = "checkstyle")
     @XmlElement(name = "file")
     private List<CheckstyleFile> fileList;
 

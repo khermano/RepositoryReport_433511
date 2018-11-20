@@ -5,17 +5,34 @@ import javax.xml.bind.annotation.*;
 import java.util.Collections;
 import java.util.List;
 
-//@Entity(name = "ent")
+@Entity
+@Table(name = "CHECKSTYLE_FILES")
 @XmlRootElement(name = "file")
-@XmlAccessorType(XmlAccessType.FIELD) //@XmlType(name = "file")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class CheckstyleFile {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long fileId;
+
+    @Column
     @XmlAttribute(name = "name")
     private String fileName;
 
-    //@OneToMany(mappedBy = "file", cascade = CascadeType.ALL)
+    @JoinColumn(name = "fileId")
+    @OneToMany(cascade = CascadeType.ALL)
     @XmlElement(name = "error")
     private List<CheckstyleError> errorList;
+
+    public Long getFileId() {
+        return fileId;
+    }
+
+    public void setFileId(Long fileId) {
+        this.fileId = fileId;
+    }
 
     public String getFileName() {
         return fileName;

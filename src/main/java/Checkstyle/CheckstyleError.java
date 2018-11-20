@@ -3,7 +3,8 @@ package Checkstyle;
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 
-@Entity(name = "CHECKSTYLE")
+@Entity
+@Table(name = "CHECKSTYLE_ERRORS")
 @XmlRootElement(name= "error")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = {"line", "column", "message", "severity", "source"})
@@ -11,9 +12,9 @@ public class CheckstyleError {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "errorId", unique = true, updatable = false, nullable = false)
+    @Column(unique = true, updatable = false, nullable = false)
     @XmlTransient
-    private Long id;
+    private Long errorId;
 
     @Column(name = "classLine")
     @XmlAttribute()
@@ -35,33 +36,28 @@ public class CheckstyleError {
     @XmlAttribute()
     private String source;
 
-    /*@ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @XmlTransient
     private CheckstyleFile checkstyleFile;
 
-    @Column(name = "fileName")
-    @XmlTransient
-    private String file =checkstyleFile.getFileName();*/
-
-    public CheckstyleError(byte column, byte line, String message, String severity, String source/*, String file*/) {
+    public CheckstyleError(byte column, byte line, String message, String severity, String source) {
         this.line = line;
         this.column = column;
         this.message = message;
         this.severity = severity;
         this.source = source;
-        //this.file = file;
     }
 
     public CheckstyleError() {
 
     }
 
-    public Long getId() {
-        return id;
+    public Long getErrorId() {
+        return errorId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setErrorId(Long errorId) {
+        this.errorId = errorId;
     }
 
     public byte getLine() {
@@ -104,17 +100,9 @@ public class CheckstyleError {
         this.source = source;
     }
 
-    /*public String getFile() {
-        return file;
-    }
-
-    public void setFile(String file) {
-        this.file = file;
-    }*/
-
     @Override
     public String toString() {
-        return "Error id: " + id + ", classLine: " + line + ", classColumn: " + column + ", errorMessage: " + message +
-                ", errorSeverity: " + severity + ", checkSource: " + source /*+ ", fileName: " + file*/;
+        return "Error errorId: " + errorId + ", classLine: " + line + ", classColumn: " + column + ", errorMessage: " + message +
+                ", errorSeverity: " + severity + ", checkSource: " + source;
     }
 }
