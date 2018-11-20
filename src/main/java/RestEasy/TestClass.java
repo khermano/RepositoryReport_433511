@@ -59,7 +59,7 @@ public class TestClass {
 
         emf.addFiles(report.getFileList());
         List<ErrorDescription> errorDescriptions = emf.loadUserDescriptions();
-        return errorDescriptions.get(0).toString();
+        return "<html>" + Integer.toString(errorDescriptions.size()) + "<br /> ******first error****** <br /> " + errorDescriptions.get(0).toString() + "</html>";
     }
 
 
