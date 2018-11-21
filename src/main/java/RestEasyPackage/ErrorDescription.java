@@ -1,4 +1,4 @@
-package RestEasy;
+package RestEasyPackage;
 
 public class ErrorDescription {
     private byte classLine;

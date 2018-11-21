@@ -1,4 +1,4 @@
-package Checkstyle;
+package CheckstylePackage;
 
 import javax.xml.bind.annotation.*;
 import java.util.Collections;

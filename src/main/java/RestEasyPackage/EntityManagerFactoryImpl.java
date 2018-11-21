@@ -1,7 +1,7 @@
-package RestEasy;
+package RestEasyPackage;
 
-import Checkstyle.CheckstyleError;
-import Checkstyle.CheckstyleFile;
+import CheckstylePackage.CheckstyleError;
+import CheckstylePackage.CheckstyleFile;
 import org.hibernate.transform.Transformers;
 
 import javax.ejb.Stateless;

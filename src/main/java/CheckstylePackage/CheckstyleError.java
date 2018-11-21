@@ -1,4 +1,4 @@
-package Checkstyle;
+package CheckstylePackage;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;

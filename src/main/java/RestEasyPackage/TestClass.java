@@ -1,7 +1,7 @@
-package RestEasy;
+package RestEasyPackage;
 
-import Checkstyle.CheckstyleError;
-import Checkstyle.CheckstyleReport;
+import CheckstylePackage.CheckstyleError;
+import CheckstylePackage.CheckstyleReport;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

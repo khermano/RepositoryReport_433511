@@ -1,4 +1,4 @@
-package Checkstyle;
+package CheckstylePackage;
 
 import javax.annotation.Generated;
 import javax.persistence.metamodel.ListAttribute;
