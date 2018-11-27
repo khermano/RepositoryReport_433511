@@ -4,8 +4,6 @@ import FindBugsPackage.ReportPackage.BugInstancePackage.*;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.Collections;
-import java.util.List;
 
 @Entity
 @Table(name = "BUG_INSTANCE")

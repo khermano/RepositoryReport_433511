@@ -2,7 +2,6 @@ package FindBugsPackage.ReportPackage.BugInstancePackage;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.Collections;
 import java.util.List;
 
 @Entity
@@ -32,10 +31,6 @@ public class FindBugsBugInstanceMethod {
     @Column
     @XmlAttribute(name = "isStatic")
     private boolean isStatic;
-
-    /*@Column
-    @XmlAttribute(name = "role")
-    private String role;*/
 
     @JoinColumn(name = "bugInstanceMethodId")
     @OneToMany(cascade = CascadeType.ALL)
@@ -81,14 +76,6 @@ public class FindBugsBugInstanceMethod {
     public void setIsStatic(boolean isStatic) {
         this.isStatic = isStatic;
     }
-
-    /*public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }*/
 
     public List<FindBugsBugInstanceSourceLine> getSourceLines() {
         return sourceLines;

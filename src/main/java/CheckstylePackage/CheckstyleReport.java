@@ -8,19 +8,8 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CheckstyleReport {
 
-    /*@XmlAttribute(name = "version")
-    private float version;*/
-
     @XmlElement(name = "file")
     private List<CheckstyleFile> fileList;
-
-    /*public float getVersion() {
-        return version;
-    }
-
-    public void setVersion(float version) {
-        this.version = version;
-    }*/
 
     public List<CheckstyleFile> getFileList() {
         return Collections.unmodifiableList(fileList);

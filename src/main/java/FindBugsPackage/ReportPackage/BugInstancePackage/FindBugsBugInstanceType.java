@@ -29,18 +29,6 @@ public class FindBugsBugInstanceType {
     @XmlAttribute(name = "typeParameters")
     private String typeParameters;
 
-    /*@XmlAttribute(name = "classname")
-    private String classname;
-
-    @XmlAttribute(name = "name")
-    private String typeName;
-
-    @XmlAttribute(name = "signature")
-    private String signature;
-
-    @XmlAttribute(name = "isStatic")
-    private String isStatic;*/
-
     @JoinColumn(name = "bugInstanceTypeId")
     @OneToMany(cascade = CascadeType.ALL)
     @XmlElement(name = "SourceLine")
@@ -77,38 +65,6 @@ public class FindBugsBugInstanceType {
     public void setTypeParameters(String typeParameters) {
         this.typeParameters = typeParameters;
     }
-
-    /*public String getClassname() {
-        return classname;
-    }
-
-    public void setClassname(String classname) {
-        this.classname = classname;
-    }
-
-    public String getTypeName() {
-        return typeName;
-    }
-
-    public void setTypeName(String typeName) {
-        this.typeName = typeName;
-    }
-
-    public String getSignature() {
-        return signature;
-    }
-
-    public void setSignature(String signature) {
-        this.signature = signature;
-    }
-
-    public String getIsStatic() {
-        return isStatic;
-    }
-
-    public void setIsStatic(String isStatic) {
-        this.isStatic = isStatic;
-    }*/
 
     public List<FindBugsBugInstanceSourceLine> getSourceLines() {
         return Collections.unmodifiableList(sourceLines);

@@ -31,9 +31,6 @@ public class FindBugsBugInstanceField {
     @XmlAttribute(name = "isStatic")
     private boolean isStatic;
 
-    /*@XmlAttribute(name = "role")
-    private String role;*/
-
     @JoinColumn(name = "bugInstanceFieldId")
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "SourceLine")
@@ -78,14 +75,6 @@ public class FindBugsBugInstanceField {
     public void setIsStatic(boolean isStatic) {
         this.isStatic = isStatic;
     }
-
-    /*public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }*/
 
     public FindBugsBugInstanceSourceLine getSourceLine() {
         return sourceLine;

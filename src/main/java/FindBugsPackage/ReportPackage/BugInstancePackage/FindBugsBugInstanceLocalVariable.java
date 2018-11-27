@@ -31,18 +31,6 @@ public class FindBugsBugInstanceLocalVariable {
     @XmlAttribute(name = "role")
     private String localVariableRole;
 
-    /*@XmlAttribute(name = "classname")
-    private String classname;
-
-    @XmlAttribute(name = "signature")
-    private String signature;
-
-    @XmlAttribute(name = "isStatic")
-    private String isStatic;
-
-    @XmlElement(name = "SourceLine")
-    private List<FindBugsBugInstanceSourceLine> sourceLineList;*/
-
     public Long getBugInstanceLocalVariableId() {
         return bugInstanceLocalVariableId;
     }
@@ -82,36 +70,4 @@ public class FindBugsBugInstanceLocalVariable {
     public void setLocalVariableRole(String localVariableRole) {
         this.localVariableRole = localVariableRole;
     }
-
-    /*public String getClassname() {
-        return classname;
-    }
-
-    public void setClassname(String classname) {
-        this.classname = classname;
-    }
-
-    public String getSignature() {
-        return signature;
-    }
-
-    public void setSignature(String signature) {
-        this.signature = signature;
-    }
-
-    public String getIsStatic() {
-        return isStatic;
-    }
-
-    public void setIsStatic(String isStatic) {
-        this.isStatic = isStatic;
-    }
-
-    public List<FindBugsBugInstanceSourceLine> getSourceLineList() {
-        return sourceLineList;
-    }
-
-    public void setSourceLineList(List<FindBugsBugInstanceSourceLine> sourceLineList) {
-        this.sourceLineList = sourceLineList;
-    }*/
 }
