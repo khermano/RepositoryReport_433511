@@ -1,33 +1,49 @@
 package FindBugsPackage.ReportPackage.BugInstancePackage;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
+@Entity
+@Table(name = "BUG_INSTANCE_INT")
 @XmlRootElement(name = "Int")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FindBugsBugInstanceInt {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long bugInstanceIntId;
+
+    @Column(name = "intValue")
     @XmlAttribute(name = "value")
-    private byte value;
+    private Long intValue;
 
+    @Column(name = "intRole")
     @XmlAttribute(name = "role")
-    private String role;
+    private String intRole;
 
-    public byte getValue() {
-        return value;
+    public Long getBugInstanceIntId() {
+        return bugInstanceIntId;
     }
 
-    public void setValue(byte value) {
-        this.value = value;
+    public void setBugInstanceIntId(Long bugInstanceIntId) {
+        this.bugInstanceIntId = bugInstanceIntId;
     }
 
-    public String getRole() {
-        return role;
+    public Long getIntValue() {
+        return intValue;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setIntValue(Long intValue) {
+        this.intValue = intValue;
+    }
+
+    public String getIntRole() {
+        return intRole;
+    }
+
+    public void setIntRole(String intRole) {
+        this.intRole = intRole;
     }
 }

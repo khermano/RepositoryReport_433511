@@ -6,8 +6,7 @@ import javax.xml.bind.annotation.*;
 @Entity
 @Table(name = "CHECKSTYLE_ERRORS")
 @XmlRootElement(name= "error")
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"line", "column", "message", "severity", "source"})
+@XmlAccessorType(XmlAccessType.FIELD) //@XmlType(propOrder = {"line", "column", "message", "severity", "source"})
 public class CheckstyleError {
 
     @Id

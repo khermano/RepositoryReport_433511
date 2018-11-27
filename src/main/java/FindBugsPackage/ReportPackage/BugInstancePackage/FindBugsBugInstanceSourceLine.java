@@ -1,75 +1,91 @@
 package FindBugsPackage.ReportPackage.BugInstancePackage;
 
-import FindBugsPackage.ReportPackage.BugInstancePackage.FindBugsBugInstanceSourceLinePackage.SourceLine;
-
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.List;
 
+@Entity
+@Table(name = "SOURCE_LINE")
 @XmlRootElement(name = "SourceLine")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FindBugsBugInstanceSourceLine {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long sourceLineId;
+
+    @Column
     @XmlAttribute(name = "classname")
-    private String classname;
+    private String className;
 
+    @Column
     @XmlAttribute(name = "start")
-    private short start;
+    private int start;
 
+    @Column
     @XmlAttribute(name = "end")
-    private short end;
+    private int end;
 
-    @XmlAttribute(name = "startBytecode")
+    /*@XmlAttribute(name = "startBytecode")
     private short startBytecode;
 
     @XmlAttribute(name = "endBytecode")
-    private short endBytecode;
+    private short endBytecode;*/
 
+    @Column
     @XmlAttribute(name = "sourcefile")
-    private String sourcefile;
+    private String sourceFile;
 
+    @Column
     @XmlAttribute(name = "sourcepath")
-    private String sourcepath;
+    private String sourcePath;
 
-    @XmlAttribute(name = "role")
+    /*@XmlAttribute(name = "role")
     private String role;
 
     @XmlAttribute(name = "name")
-    private String name;
+    private String sourceLineName;
 
     @XmlAttribute(name = "signature")
     private String signature;
 
     @XmlAttribute(name = "isStatic")
-    private String isStatic;
+    private String isStatic;*/
 
-    @XmlElement(name = "SourceLine")
-    private List<SourceLine> sourceLineList;
-
-    public String getClassname() {
-        return classname;
+    public Long getSourceLineId() {
+        return sourceLineId;
     }
 
-    public void setClassname(String classname) {
-        this.classname = classname;
+    public void setSourceLineId(Long sourceLineId) {
+        this.sourceLineId = sourceLineId;
     }
 
-    public short getStart() {
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public int getStart() {
         return start;
     }
 
-    public void setStart(short start) {
+    public void setStart(int start) {
         this.start = start;
     }
 
-    public short getEnd() {
+    public int getEnd() {
         return end;
     }
 
-    public void setEnd(short end) {
+    public void setEnd(int end) {
         this.end = end;
     }
 
-    public short getStartBytecode() {
+    /*public short getStartBytecode() {
         return startBytecode;
     }
 
@@ -83,25 +99,25 @@ public class FindBugsBugInstanceSourceLine {
 
     public void setEndBytecode(short endBytecode) {
         this.endBytecode = endBytecode;
+    }*/
+
+    public String getSourceFile() {
+        return sourceFile;
     }
 
-    public String getSourcefile() {
-        return sourcefile;
+    public void setSourceFile(String sourceFile) {
+        this.sourceFile = sourceFile;
     }
 
-    public void setSourcefile(String sourcefile) {
-        this.sourcefile = sourcefile;
+    public String getSourcePath() {
+        return sourcePath;
     }
 
-    public String getSourcepath() {
-        return sourcepath;
+    public void setSourcePath(String sourcePath) {
+        this.sourcePath = sourcePath;
     }
 
-    public void setSourcepath(String sourcepath) {
-        this.sourcepath = sourcepath;
-    }
-
-    public String getRole() {
+    /*public String getRole() {
         return role;
     }
 
@@ -109,12 +125,12 @@ public class FindBugsBugInstanceSourceLine {
         this.role = role;
     }
 
-    public String getName() {
-        return name;
+    public String getSourceLineName() {
+        return sourceLineName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSourceLineName(String sourceLineName) {
+        this.sourceLineName = sourceLineName;
     }
 
     public String getSignature() {
@@ -139,5 +155,5 @@ public class FindBugsBugInstanceSourceLine {
 
     public void setSourceLineList(List<SourceLine> sourceLineList) {
         this.sourceLineList = sourceLineList;
-    }
+    }*/
 }

@@ -1,45 +1,69 @@
 package FindBugsPackage.ReportPackage.BugInstancePackage;
 
-import FindBugsPackage.ReportPackage.BugInstancePackage.FindBugsBugInstanceSourceLinePackage.SourceLine;
-
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.Collections;
+import java.util.List;
 
+@Entity
+@Table(name = "BUG_INSTANCE_METHOD")
 @XmlRootElement(name = "Method")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FindBugsBugInstanceMethod {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long bugInstanceMethodId;
+
+    @Column
     @XmlAttribute(name = "classname")
-    private String classname;
+    private String className;
 
+    @Column
     @XmlAttribute(name = "name")
-    private String name;
+    private String methodName;
 
+    @Column(name = "methodSignature", length = 1000)
     @XmlAttribute(name = "signature")
     private String signature;
 
+    @Column
     @XmlAttribute(name = "isStatic")
-    private String isStatic;
+    private boolean isStatic;
 
+    /*@Column
     @XmlAttribute(name = "role")
-    private String role;
+    private String role;*/
 
+    @JoinColumn(name = "bugInstanceMethodId")
+    @OneToMany(cascade = CascadeType.ALL)
     @XmlElement(name = "SourceLine")
-    private SourceLine sourceLine;
+    private List<FindBugsBugInstanceSourceLine> sourceLines;
 
-    public String getClassname() {
-        return classname;
+    public Long getBugInstanceMethodId() {
+        return bugInstanceMethodId;
     }
 
-    public void setClassname(String classname) {
-        this.classname = classname;
+    public void setBugInstanceMethodId(Long bugInstanceMethodId) {
+        this.bugInstanceMethodId = bugInstanceMethodId;
     }
 
-    public String getName() {
-        return name;
+    public String getClassName() {
+        return className;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public String getMethodName() {
+        return methodName;
+    }
+
+    public void setMethodName(String name) {
+        this.methodName = methodName;
     }
 
     public String getSignature() {
@@ -50,27 +74,27 @@ public class FindBugsBugInstanceMethod {
         this.signature = signature;
     }
 
-    public String getIsStatic() {
+    public boolean getIsStatic() {
         return isStatic;
     }
 
-    public void setIsStatic(String isStatic) {
+    public void setIsStatic(boolean isStatic) {
         this.isStatic = isStatic;
     }
 
-    public String getRole() {
+    /*public String getRole() {
         return role;
     }
 
     public void setRole(String role) {
         this.role = role;
+    }*/
+
+    public List<FindBugsBugInstanceSourceLine> getSourceLines() {
+        return sourceLines;
     }
 
-    public SourceLine getSourceLine() {
-        return sourceLine;
-    }
-
-    public void setSourceLine(SourceLine sourceLine) {
-        this.sourceLine = sourceLine;
+    public void setSourceLines(List<FindBugsBugInstanceSourceLine> sourceLines) {
+        this.sourceLines = sourceLines;
     }
 }

@@ -1,27 +1,37 @@
 package FindBugsPackage.ReportPackage.BugInstancePackage;
 
-import FindBugsPackage.ReportPackage.BugInstancePackage.FindBugsBugInstanceSourceLinePackage.SourceLine;
-
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.List;
 
+@Entity
+@Table(name = "BUG_INSTANCE_LOCAL_VARIABLE")
 @XmlRootElement(name = "LocalVariable")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FindBugsBugInstanceLocalVariable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long bugInstanceLocalVariableId;
+
+    @Column
     @XmlAttribute(name = "name")
-    private String name;
+    private String localVariableName;
 
+    @Column
     @XmlAttribute(name = "register")
-    private byte register;
+    private short register;
 
+    @Column
     @XmlAttribute(name = "pc")
-    private short pc;
+    private int pc;
 
+    @Column(name = "localVariableRole")
     @XmlAttribute(name = "role")
-    private String role;
+    private String localVariableRole;
 
-    @XmlAttribute(name = "classname")
+    /*@XmlAttribute(name = "classname")
     private String classname;
 
     @XmlAttribute(name = "signature")
@@ -31,41 +41,49 @@ public class FindBugsBugInstanceLocalVariable {
     private String isStatic;
 
     @XmlElement(name = "SourceLine")
-    private List<SourceLine> sourceLineList;
+    private List<FindBugsBugInstanceSourceLine> sourceLineList;*/
 
-    public String getName() {
-        return name;
+    public Long getBugInstanceLocalVariableId() {
+        return bugInstanceLocalVariableId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBugInstanceLocalVariableId(Long bugInstanceLocalVariableId) {
+        this.bugInstanceLocalVariableId = bugInstanceLocalVariableId;
     }
 
-    public byte getRegister() {
+    public String getLocalVariableName() {
+        return localVariableName;
+    }
+
+    public void setLocalVariableName(String localVariableName) {
+        this.localVariableName = localVariableName;
+    }
+
+    public short getRegister() {
         return register;
     }
 
-    public void setRegister(byte register) {
+    public void setRegister(short register) {
         this.register = register;
     }
 
-    public short getPc() {
+    public int getPc() {
         return pc;
     }
 
-    public void setPc(short pc) {
+    public void setPc(int pc) {
         this.pc = pc;
     }
 
-    public String getRole() {
-        return role;
+    public String getLocalVariableRole() {
+        return localVariableRole;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setLocalVariableRole(String localVariableRole) {
+        this.localVariableRole = localVariableRole;
     }
 
-    public String getClassname() {
+    /*public String getClassname() {
         return classname;
     }
 
@@ -89,11 +107,11 @@ public class FindBugsBugInstanceLocalVariable {
         this.isStatic = isStatic;
     }
 
-    public List<SourceLine> getSourceLineList() {
+    public List<FindBugsBugInstanceSourceLine> getSourceLineList() {
         return sourceLineList;
     }
 
-    public void setSourceLineList(List<SourceLine> sourceLineList) {
+    public void setSourceLineList(List<FindBugsBugInstanceSourceLine> sourceLineList) {
         this.sourceLineList = sourceLineList;
-    }
+    }*/
 }

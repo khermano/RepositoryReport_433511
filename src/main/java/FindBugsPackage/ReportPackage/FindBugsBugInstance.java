@@ -2,53 +2,95 @@ package FindBugsPackage.ReportPackage;
 
 import FindBugsPackage.ReportPackage.BugInstancePackage.*;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.Collections;
+import java.util.List;
 
-@XmlRootElement(name = "BugInstancePackage")
+@Entity
+@Table(name = "BUG_INSTANCE")
+@XmlRootElement(name = "BugInstance")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FindBugsBugInstance {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long bugInstanceId;
+
+    @Column(name = "bugInstanceType")
     @XmlAttribute(name = "type")
     private String type;
 
+    @Column(name = "bugInstancePriority")
     @XmlAttribute(name = "priority")
     private byte priority;
 
+    @Column(name = "bugInstanceRank")
     @XmlAttribute(name = "rank")
-    private byte rank;
+    private int rank;
 
+    @Column(name = "bugInstanceAbbrev")
     @XmlAttribute(name = "abbrev")
     private String abbrev;
 
+    @Column(name = "bugInstanceCategory")
     @XmlAttribute(name = "category")
     private String category;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "Class")
-    private FindBugsBugInstanceClass findBugsBugInstanceClass;
+    private FindBugsBugInstanceClass bugInstanceClass;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "Method")
-    private FindBugsBugInstanceMethod findBugsBugInstanceMethod;
+    private FindBugsBugInstanceMethod bugInstanceMethod;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "Type")
-    private FindBugsBugInstanceType findBugsBugInstanceType;
+    private FindBugsBugInstanceType bugInstanceType;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "Field")
-    private FindBugsBugInstanceField findBugsBugInstanceField;
+    private FindBugsBugInstanceField bugInstanceField;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "SourceLine")
-    private FindBugsBugInstanceSourceLine findBugsBugInstanceSourceLine;
+    private FindBugsBugInstanceSourceLine bugInstanceSourceLine;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "String")
-    private FindBugsBugInstanceString findBugsBugInstanceString;
+    private FindBugsBugInstanceString bugInstanceString;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "LocalVariable")
-    private FindBugsBugInstanceLocalVariable findBugsBugInstanceLocalVariable;
+    private FindBugsBugInstanceLocalVariable bugInstanceLocalVariable;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "Property")
-    private FindBugsBugInstanceProperty findBugsBugInstanceProperty;
+    private FindBugsBugInstanceProperty bugInstanceProperty;
 
+    @JoinColumn(name = "bugInstanceId")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @XmlElement(name = "Int")
-    private FindBugsBugInstanceInt findBugsBugInstanceInt;
+    private FindBugsBugInstanceInt bugInstanceInt;
+
+    public Long getBugInstanceId() {
+        return bugInstanceId;
+    }
+
+    public void setBugInstanceId(Long bugInstanceId) {
+        this.bugInstanceId = bugInstanceId;
+    }
 
     public String getType() {
         return type;
@@ -66,11 +108,11 @@ public class FindBugsBugInstance {
         this.priority = priority;
     }
 
-    public byte getRank() {
+    public int getRank() {
         return rank;
     }
 
-    public void setRank(byte rank) {
+    public void setRank(int rank) {
         this.rank = rank;
     }
 
@@ -90,75 +132,75 @@ public class FindBugsBugInstance {
         this.category = category;
     }
 
-    public FindBugsBugInstanceClass getFindBugsBugInstanceClass() {
-        return findBugsBugInstanceClass;
+    public FindBugsBugInstanceClass getBugInstanceClass() {
+        return bugInstanceClass;
     }
 
-    public void setFindBugsBugInstanceClass(FindBugsBugInstanceClass findBugsBugInstanceClass) {
-        this.findBugsBugInstanceClass = findBugsBugInstanceClass;
+    public void setBugInstanceClass(FindBugsBugInstanceClass bugInstanceClass) {
+        this.bugInstanceClass = bugInstanceClass;
     }
 
-    public FindBugsBugInstanceMethod getFindBugsBugInstanceMethod() {
-        return findBugsBugInstanceMethod;
+    public FindBugsBugInstanceMethod getBugInstanceMethod() {
+        return bugInstanceMethod;
     }
 
-    public void setFindBugsBugInstanceMethod(FindBugsBugInstanceMethod findBugsBugInstanceMethod) {
-        this.findBugsBugInstanceMethod = findBugsBugInstanceMethod;
+    public void setBugInstanceMethod(FindBugsBugInstanceMethod bugInstanceMethod) {
+        this.bugInstanceMethod = bugInstanceMethod;
     }
 
-    public FindBugsBugInstanceType getFindBugsBugInstanceType() {
-        return findBugsBugInstanceType;
+    public FindBugsBugInstanceType getBugInstanceType() {
+        return bugInstanceType;
     }
 
-    public void setFindBugsBugInstanceType(FindBugsBugInstanceType findBugsBugInstanceType) {
-        this.findBugsBugInstanceType = findBugsBugInstanceType;
+    public void setBugInstanceType(FindBugsBugInstanceType bugInstanceType) {
+        this.bugInstanceType = bugInstanceType;
     }
 
-    public FindBugsBugInstanceField getFindBugsBugInstanceField() {
-        return findBugsBugInstanceField;
+    public FindBugsBugInstanceField getBugInstanceField() {
+        return bugInstanceField;
     }
 
-    public void setFindBugsBugInstanceField(FindBugsBugInstanceField findBugsBugInstanceField) {
-        this.findBugsBugInstanceField = findBugsBugInstanceField;
+    public void setBugInstanceField(FindBugsBugInstanceField bugInstanceField) {
+        this.bugInstanceField = bugInstanceField;
     }
 
-    public FindBugsBugInstanceSourceLine getFindBugsBugInstanceSourceLine() {
-        return findBugsBugInstanceSourceLine;
+    public FindBugsBugInstanceSourceLine getBugInstanceSourceLine() {
+        return bugInstanceSourceLine;
     }
 
-    public void setFindBugsBugInstanceSourceLine(FindBugsBugInstanceSourceLine findBugsBugInstanceSourceLine) {
-        this.findBugsBugInstanceSourceLine = findBugsBugInstanceSourceLine;
+    public void setBugInstanceSourceLine(FindBugsBugInstanceSourceLine bugInstanceSourceLine) {
+        this.bugInstanceSourceLine = bugInstanceSourceLine;
     }
 
-    public FindBugsBugInstanceString getFindBugsBugInstanceString() {
-        return findBugsBugInstanceString;
+    public FindBugsBugInstanceString getBugInstanceString() {
+        return bugInstanceString;
     }
 
-    public void setFindBugsBugInstanceString(FindBugsBugInstanceString findBugsBugInstanceString) {
-        this.findBugsBugInstanceString = findBugsBugInstanceString;
+    public void setBugInstanceString(FindBugsBugInstanceString bugInstanceString) {
+        this.bugInstanceString = bugInstanceString;
     }
 
-    public FindBugsBugInstanceLocalVariable getFindBugsBugInstanceLocalVariable() {
-        return findBugsBugInstanceLocalVariable;
+    public FindBugsBugInstanceLocalVariable getBugInstanceLocalVariable() {
+        return bugInstanceLocalVariable;
     }
 
-    public void setFindBugsBugInstanceLocalVariable(FindBugsBugInstanceLocalVariable findBugsBugInstanceLocalVariable) {
-        this.findBugsBugInstanceLocalVariable = findBugsBugInstanceLocalVariable;
+    public void setBugInstanceLocalVariable(FindBugsBugInstanceLocalVariable bugInstanceLocalVariable) {
+        this.bugInstanceLocalVariable = bugInstanceLocalVariable;
     }
 
-    public FindBugsBugInstanceProperty getFindBugsBugInstanceProperty() {
-        return findBugsBugInstanceProperty;
+    public FindBugsBugInstanceProperty getBugInstanceProperty() {
+        return bugInstanceProperty;
     }
 
-    public void setFindBugsBugInstanceProperty(FindBugsBugInstanceProperty findBugsBugInstanceProperty) {
-        this.findBugsBugInstanceProperty = findBugsBugInstanceProperty;
+    public void setBugInstanceProperty(FindBugsBugInstanceProperty bugInstanceProperty) {
+        this.bugInstanceProperty = bugInstanceProperty;
     }
 
-    public FindBugsBugInstanceInt getFindBugsBugInstanceInt() {
-        return findBugsBugInstanceInt;
+    public FindBugsBugInstanceInt getBugInstanceInt() {
+        return bugInstanceInt;
     }
 
-    public void setFindBugsBugInstanceInt(FindBugsBugInstanceInt findBugsBugInstanceInt) {
-        this.findBugsBugInstanceInt = findBugsBugInstanceInt;
+    public void setBugInstanceInt(FindBugsBugInstanceInt bugInstanceInt) {
+        this.bugInstanceInt = bugInstanceInt;
     }
 }

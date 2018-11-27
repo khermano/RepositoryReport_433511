@@ -2,6 +2,7 @@ package RestEasyPackage;
 
 import CheckstylePackage.CheckstyleError;
 import CheckstylePackage.CheckstyleReport;
+import FindBugsPackage.FindBugsReport;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -60,6 +61,19 @@ public class TestClass {
         emf.addFiles(report.getFileList());
         List<ErrorDescription> errorDescriptions = emf.loadUserDescriptions();
         return "<html>" + Integer.toString(errorDescriptions.size()) + "<br /> ******first error****** <br /> " + errorDescriptions.get(0).toString() + "</html>";
+    }
+
+    @GET
+    @Path("/testFindBugs")
+    public String testFindBugs() throws JAXBException {
+        JAXBContext jc = JAXBContext.newInstance(FindBugsReport.class);
+
+        Unmarshaller unmarshaller = jc.createUnmarshaller();
+        FindBugsReport report = (FindBugsReport) unmarshaller.unmarshal(new File("/home/khermano/BachelorThesis4/FindBugsReport.xml"));
+
+        emf.addBugInstances(report.getFindBugsBugInstanceList());
+        //emf.addFindBugsSummary(report.getFindBugsSummary());
+        return "Done";
     }
 
 

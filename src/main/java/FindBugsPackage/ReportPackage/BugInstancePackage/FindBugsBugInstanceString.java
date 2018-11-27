@@ -1,33 +1,49 @@
 package FindBugsPackage.ReportPackage.BugInstancePackage;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
+@Entity
+@Table(name = "BUG_INSTANCE_STRING")
 @XmlRootElement(name = "String")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FindBugsBugInstanceString {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, updatable = false, nullable = false)
+    @XmlTransient
+    private Long bugInstanceStringId;
+
+    @Column(name = "stringValue")
     @XmlAttribute(name = "value")
-    private byte value;
+    private String stringValue;
 
+    @Column(name = "stringRole")
     @XmlAttribute(name = "role")
-    private String role;
+    private String stringRole;
 
-    public byte getValue() {
-        return value;
+    public Long getBugInstanceStringId() {
+        return bugInstanceStringId;
     }
 
-    public void setValue(byte value) {
-        this.value = value;
+    public void setBugInstanceStringId(Long bugInstanceStringId) {
+        this.bugInstanceStringId = bugInstanceStringId;
     }
 
-    public String getRole() {
-        return role;
+    public String getStringValue() {
+        return stringValue;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setStringValue(String stringValue) {
+        this.stringValue = stringValue;
+    }
+
+    public String getStringRole() {
+        return stringRole;
+    }
+
+    public void setStringRole(String stringRole) {
+        this.stringRole = stringRole;
     }
 }
