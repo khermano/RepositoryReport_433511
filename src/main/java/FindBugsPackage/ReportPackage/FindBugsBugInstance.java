@@ -17,23 +17,23 @@ public class FindBugsBugInstance {
     @XmlTransient
     private Long bugInstanceId;
 
-    @Column(name = "bugInstanceType")
+    @Column
     @XmlAttribute(name = "type")
     private String type;
 
-    @Column(name = "bugInstancePriority")
+    @Column
     @XmlAttribute(name = "priority")
     private byte priority;
 
-    @Column(name = "bugInstanceRank")
+    @Column
     @XmlAttribute(name = "rank")
     private int rank;
 
-    @Column(name = "bugInstanceAbbrev")
+    @Column
     @XmlAttribute(name = "abbrev")
     private String abbrev;
 
-    @Column(name = "bugInstanceCategory")
+    @Column
     @XmlAttribute(name = "category")
     private String category;
 

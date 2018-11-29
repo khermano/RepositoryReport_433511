@@ -2,10 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7705cb3a-cd2f-4e08-8ba1-7fc4001853ed" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/RestEasyPackage/BugInstanceDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsBugInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsBugInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/CheckstylePackage/CheckstyleReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/CheckstylePackage/CheckstyleReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/FindBugsBugInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/FindBugsPackage/ReportPackage/FindBugsBugInstance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/RestEasyPackage/EntityManagerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/RestEasyPackage/EntityManagerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/RestEasyPackage/EntityManagerFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/RestEasyPackage/EntityManagerFactoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/RestEasyPackage/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/RestEasyPackage/TestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CheckstylePackage/CheckstyleReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CheckstylePackage/CheckstyleReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/FindBugsBugInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FindBugsPackage/ReportPackage/FindBugsBugInstance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestEasyPackage/EntityManagerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestEasyPackage/EntityManagerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestEasyPackage/EntityManagerFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestEasyPackage/EntityManagerFactoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestEasyPackage/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestEasyPackage/TestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,17 +45,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckstyleReport.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleReport.java">
+      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="335">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityManagerFactoryImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="84" column="178" selection-start-line="84" selection-start-column="178" selection-end-line="84" selection-end-column="178" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckstyleError.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-161">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/RestEasy/ErrorField.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/RestEasy/EntityManagerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestEasy/ErrorDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestEasy/EntityManagerFactoryImpl.java" />
@@ -97,18 +151,20 @@
         <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/FindBugsReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceString.java" />
         <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceProperty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceInt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsBugInstance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.java" />
         <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java" />
         <option value="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/BugInstanceDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsBugInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java" />
       </list>
     </option>
   </component>
@@ -119,9 +175,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2084" />
-    <option name="width" value="1910" />
-    <option name="height" value="789" />
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,6 +278,21 @@
               <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
               <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/BackUp/TrueFormatFindBugs.xml" />
+    <property name="last_opened_file_path" value="$USER_HOME$/BachelorThesis/pv243-music-library" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -331,7 +402,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -342,10 +412,10 @@
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32959402" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32819384" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49893162" visible="true" weight="0.32268724" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49893162" visible="true" weight="0.32268724" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.64715445" visible="true" weight="0.2815171" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.64715445" visible="true" weight="0.2815171" />
       <window_info anchor="bottom" id="Analysis" order="0" />
       <window_info id="Structure" order="6" sideWeight="0.35284552" side_tool="true" visible="true" weight="0.2815171" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -378,10 +448,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/RepositoryReport_433511-ds.xml" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/databaseAddConnector" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/ErrorDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/databaseSetUp.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -453,16 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/RestEasy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,23 +559,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsProject.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsErrors.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceSourceLinePackage/SourceLine.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/FindBugsReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/BackUp/TrueFormatFindBugs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-131">
@@ -534,118 +566,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsBugInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceSourceLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
           <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding>
-            <element signature="e#5948#5949#0" expanded="true" />
-            <element signature="e#6005#6006#0" expanded="true" />
-            <element signature="e#6051#6052#0" expanded="true" />
-            <element signature="e#6107#6108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -663,12 +587,198 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/FindBugsReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/RestEasy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/ErrorDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/BugInstanceDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+          <folding>
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindBugsPackage/ReportPackage/FindBugsBugInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2355">
+          <caret line="203" column="1" lean-forward="true" selection-start-line="203" selection-start-column="1" selection-end-line="203" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CheckstylePackage/CheckstyleError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestEasyPackage/EntityManagerFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="84" column="178" selection-start-line="84" selection-start-column="178" selection-end-line="84" selection-end-column="178" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

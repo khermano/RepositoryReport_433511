@@ -8,6 +8,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -60,7 +61,11 @@ public class TestClass {
 
         emf.addFiles(report.getFileList());
         List<ErrorDescription> errorDescriptions = emf.loadUserDescriptions();
-        return "<html>" + Integer.toString(errorDescriptions.size()) + "<br /> ******first error****** <br /> " + errorDescriptions.get(0).toString() + "</html>";
+        List<ErrorDescription> errorDescriptionsFromTitleCheck = emf.loadUserDescriptionsFromJavadocMethodCheck();
+        return "<html>" + Integer.toString(errorDescriptions.size())
+                + "<br /> ******first error****** <br /> " + (errorDescriptions.size()!=0? errorDescriptions.get(0).toString() : "Empty set") +
+                "<br /> ******first error from TitleCheck****** <br /> " +
+                (errorDescriptionsFromTitleCheck.size()!=0 ? errorDescriptionsFromTitleCheck.get(0).toString() : "Empty set") + "</html>";
     }
 
     @GET
@@ -72,8 +77,35 @@ public class TestClass {
         FindBugsReport report = (FindBugsReport) unmarshaller.unmarshal(new File("/home/khermano/BachelorThesis4/FindBugsReport.xml"));
 
         emf.addBugInstances(report.getFindBugsBugInstanceList());
-        //emf.addFindBugsSummary(report.getFindBugsSummary());
         return "Done";
+    }
+
+    @GET
+    @Path("/testBugInstance")
+    public String getBugInstanceWithPriority1() throws JAXBException {
+        JAXBContext jc = JAXBContext.newInstance(FindBugsReport.class);
+
+        Unmarshaller unmarshaller = jc.createUnmarshaller();
+        FindBugsReport report = (FindBugsReport) unmarshaller.unmarshal(new File("/home/khermano/BachelorThesis4/FindBugsReport.xml"));
+
+        emf.addBugInstances(report.getFindBugsBugInstanceList());
+        List<BugInstanceDescription> bugInstanceDescriptionsPriority1 = emf.loadBugInstanceWithPriority1();
+        List<BugInstanceDescription> bugInstanceDescriptionsRankScariest = emf.loadBugInstanceWithRankScariest();
+        List<BugInstanceDescription> bugInstanceDescriptionsCategoryCorrectness = emf.loadBugInstanceWithCategoryCorrectness();
+        String priority1 = "******Number of instances****** <br /> " + Integer.toString(bugInstanceDescriptionsPriority1.size()) + "<br /> ******First bug instance with priority 1****** <br /> "
+                + (bugInstanceDescriptionsPriority1.size()!=0 ? bugInstanceDescriptionsPriority1.get(0).toString() : "Empty set");
+        String rankScariest = "<br /> ******First bug instance with scariest rank******<br /> "
+                + (bugInstanceDescriptionsRankScariest.size()!=0 ? bugInstanceDescriptionsRankScariest.get(0).toString() : "Empty set");
+        String categoryCorrectness = "<br /> ******First bug instance with category correctness******<br /> "
+                + (bugInstanceDescriptionsCategoryCorrectness.size()!=0 ? bugInstanceDescriptionsCategoryCorrectness.get(0).toString() : "Empty set");
+        return "<html>" + priority1 + rankScariest + categoryCorrectness + "</html>";
+    }
+
+    @GET
+    @Path("/index")
+    public Response viewHome() {
+        File f = new File("/home/khermano/Devel/RepositoryReport_433511/src/main/webapp/index.html");
+        return Response.status(200).entity(f).build();
     }
 
 

@@ -80,4 +80,28 @@ public class EntityManagerFactoryImpl implements EntityManagerFactory{
         Query query = em.createNativeQuery(queryString);
         return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(ErrorDescription.class)).list();
     }
+
+    public List<ErrorDescription> loadUserDescriptionsFromJavadocMethodCheck() {
+        String queryString = "SELECT e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE checkSource LIKE '%JavadocMethodCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(ErrorDescription.class)).list();
+    }
+
+    public List<BugInstanceDescription> loadBugInstanceWithPriority1() {
+        String queryString = "SELECT type, priority, rank, abbrev, category FROM BUG_INSTANCE WHERE priority = '1'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceDescription.class)).list();
+    }
+
+    public List<BugInstanceDescription> loadBugInstanceWithRankScariest() {
+        String queryString = "SELECT type, priority, rank, abbrev, category FROM BUG_INSTANCE WHERE rank BETWEEN '1' AND '4'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceDescription.class)).list();
+    }
+
+    public List<BugInstanceDescription> loadBugInstanceWithCategoryCorrectness() {
+        String queryString = "SELECT type, priority, rank, abbrev, category FROM BUG_INSTANCE WHERE category = 'CORRECTNESS'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceDescription.class)).list();
+    }
 }

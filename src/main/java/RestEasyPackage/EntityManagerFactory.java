@@ -29,4 +29,12 @@ public interface EntityManagerFactory {
 
     List<ErrorDescription> loadUserDescriptions();
 
+    List<ErrorDescription> loadUserDescriptionsFromJavadocMethodCheck();
+
+    List<BugInstanceDescription> loadBugInstanceWithPriority1();
+
+    List<BugInstanceDescription> loadBugInstanceWithRankScariest();
+
+    List<BugInstanceDescription> loadBugInstanceWithCategoryCorrectness();
+
 }

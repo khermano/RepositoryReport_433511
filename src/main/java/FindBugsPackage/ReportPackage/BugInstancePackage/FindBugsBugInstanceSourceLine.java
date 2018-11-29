@@ -27,12 +27,6 @@ public class FindBugsBugInstanceSourceLine {
     @XmlAttribute(name = "end")
     private int end;
 
-    /*@XmlAttribute(name = "startBytecode")
-    private short startBytecode;
-
-    @XmlAttribute(name = "endBytecode")
-    private short endBytecode;*/
-
     @Column
     @XmlAttribute(name = "sourcefile")
     private String sourceFile;
@@ -40,18 +34,6 @@ public class FindBugsBugInstanceSourceLine {
     @Column
     @XmlAttribute(name = "sourcepath")
     private String sourcePath;
-
-    /*@XmlAttribute(name = "role")
-    private String role;
-
-    @XmlAttribute(name = "name")
-    private String sourceLineName;
-
-    @XmlAttribute(name = "signature")
-    private String signature;
-
-    @XmlAttribute(name = "isStatic")
-    private String isStatic;*/
 
     public Long getSourceLineId() {
         return sourceLineId;
@@ -85,22 +67,6 @@ public class FindBugsBugInstanceSourceLine {
         this.end = end;
     }
 
-    /*public short getStartBytecode() {
-        return startBytecode;
-    }
-
-    public void setStartBytecode(short startBytecode) {
-        this.startBytecode = startBytecode;
-    }
-
-    public short getEndBytecode() {
-        return endBytecode;
-    }
-
-    public void setEndBytecode(short endBytecode) {
-        this.endBytecode = endBytecode;
-    }*/
-
     public String getSourceFile() {
         return sourceFile;
     }
@@ -116,44 +82,4 @@ public class FindBugsBugInstanceSourceLine {
     public void setSourcePath(String sourcePath) {
         this.sourcePath = sourcePath;
     }
-
-    /*public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public String getSourceLineName() {
-        return sourceLineName;
-    }
-
-    public void setSourceLineName(String sourceLineName) {
-        this.sourceLineName = sourceLineName;
-    }
-
-    public String getSignature() {
-        return signature;
-    }
-
-    public void setSignature(String signature) {
-        this.signature = signature;
-    }
-
-    public String getIsStatic() {
-        return isStatic;
-    }
-
-    public void setIsStatic(String isStatic) {
-        this.isStatic = isStatic;
-    }
-
-    public List<SourceLine> getSourceLineList() {
-        return sourceLineList;
-    }
-
-    public void setSourceLineList(List<SourceLine> sourceLineList) {
-        this.sourceLineList = sourceLineList;
-    }*/
 }
