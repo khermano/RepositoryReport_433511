@@ -1,9 +1,11 @@
-package RestEasyPackage;
+package JSF.EntityManager;
 
 import CheckstylePackage.CheckstyleError;
 import CheckstylePackage.CheckstyleFile;
 import FindBugsPackage.ReportPackage.BugInstancePackage.*;
 import FindBugsPackage.ReportPackage.FindBugsBugInstance;
+import JSF.CheckstyleErrorDescription;
+import RestEasyPackage.BugInstanceDescription;
 
 import javax.ejb.Local;
 import java.util.List;
@@ -27,9 +29,9 @@ public interface EntityManagerFactory {
 
     CheckstyleFile getFile(Long id);
 
-    List<ErrorDescription> loadUserDescriptions();
+    List<CheckstyleErrorDescription> loadUserDescriptions();
 
-    List<ErrorDescription> loadUserDescriptionsFromJavadocMethodCheck();
+    List<CheckstyleErrorDescription> loadUserDescriptionsFromJavadocMethodCheck();
 
     List<BugInstanceDescription> loadBugInstanceWithPriority1();
 

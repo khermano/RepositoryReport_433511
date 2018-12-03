@@ -1,6 +1,6 @@
-package RestEasyPackage;
+package JSF;
 
-public class ErrorDescription {
+public class CheckstyleErrorDescription {
     private byte classLine;
     private byte classColumn;
     private String errorMessage;
@@ -8,11 +8,11 @@ public class ErrorDescription {
     private String checkSource;
     private String fileName;
 
-    public ErrorDescription() {
+    public CheckstyleErrorDescription() {
 
     }
 
-    public ErrorDescription(byte classLine, byte classColumn, String errorMessage, String errorSeverity, String checkSource, String fileName) {
+    public CheckstyleErrorDescription(byte classLine, byte classColumn, String errorMessage, String errorSeverity, String checkSource, String fileName) {
         this.classLine = classLine;
         this.classColumn = classColumn;
         this.errorMessage = errorMessage;

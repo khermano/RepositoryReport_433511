@@ -1,9 +1,11 @@
-package RestEasyPackage;
+package JSF.EntityManager;
 
 import CheckstylePackage.CheckstyleError;
 import CheckstylePackage.CheckstyleFile;
 import FindBugsPackage.ReportPackage.BugInstancePackage.*;
 import FindBugsPackage.ReportPackage.FindBugsBugInstance;
+import JSF.CheckstyleErrorDescription;
+import RestEasyPackage.BugInstanceDescription;
 import org.hibernate.transform.Transformers;
 
 import javax.ejb.Stateless;
@@ -14,7 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 
 @Stateless
-public class EntityManagerFactoryImpl implements EntityManagerFactory{
+public class EntityManagerFactoryImpl implements EntityManagerFactory {
 
     @PersistenceContext(unitName = "testPersistenceUnit")
     private EntityManager em;
@@ -75,16 +77,16 @@ public class EntityManagerFactoryImpl implements EntityManagerFactory{
         return em.find(CheckstyleFile.class, id);
     }
 
-    public List<ErrorDescription> loadUserDescriptions() {
+    public List<CheckstyleErrorDescription> loadUserDescriptions() {
         String queryString = "SELECT e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId";
         Query query = em.createNativeQuery(queryString);
-        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(ErrorDescription.class)).list();
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
     }
 
-    public List<ErrorDescription> loadUserDescriptionsFromJavadocMethodCheck() {
+    public List<CheckstyleErrorDescription> loadUserDescriptionsFromJavadocMethodCheck() {
         String queryString = "SELECT e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE checkSource LIKE '%JavadocMethodCheck'";
         Query query = em.createNativeQuery(queryString);
-        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(ErrorDescription.class)).list();
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
     }
 
     public List<BugInstanceDescription> loadBugInstanceWithPriority1() {

@@ -3,6 +3,8 @@ package RestEasyPackage;
 import CheckstylePackage.CheckstyleError;
 import CheckstylePackage.CheckstyleReport;
 import FindBugsPackage.FindBugsReport;
+import JSF.CheckstyleErrorDescription;
+import JSF.EntityManager.EntityManagerFactory;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -35,13 +37,13 @@ public class TestClass {
         return error2.toString();
     }
 
-    @GET
+    /*@GET
     @Path("/testErrorFromXml")
     public String returnErrorFromXml() throws JAXBException {
         JAXBContext jc = JAXBContext.newInstance(CheckstyleReport.class);
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
-        CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("/home/khermano/Devel/RepositoryReport_433511/src/main/resources/input.xml"));
+        CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("/home/khermano/Devel/RepositoryReport_433511/src/main/resources/testInput.xml"));
 
         emf.addFile(report.getFileList().get(0));
         emf.addError(report.getFileList().get(0).getErrorList().get(0));
@@ -49,7 +51,7 @@ public class TestClass {
         CheckstyleError error = emf.getError(report.getFileList().get(0).getErrorList().get(0).getErrorId());
         CheckstyleError error2 = emf.getError(report.getFileList().get(0).getErrorList().get(1).getErrorId());
         return error.toString() + "    *******    " + error2.toString();
-    }
+    }*/
 
     @GET
     @Path("/testErrorFromXml2")
@@ -60,12 +62,12 @@ public class TestClass {
         CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("/home/khermano/BachelorThesis4/CheckstyleReport.xml")); //nezabudni zmenit cestu na /tmp
 
         emf.addFiles(report.getFileList());
-        List<ErrorDescription> errorDescriptions = emf.loadUserDescriptions();
-        List<ErrorDescription> errorDescriptionsFromTitleCheck = emf.loadUserDescriptionsFromJavadocMethodCheck();
-        return "<html>" + Integer.toString(errorDescriptions.size())
-                + "<br /> ******first error****** <br /> " + (errorDescriptions.size()!=0? errorDescriptions.get(0).toString() : "Empty set") +
+        List<CheckstyleErrorDescription> checkstyleErrorDescriptions = emf.loadUserDescriptions();
+        List<CheckstyleErrorDescription> checkstyleErrorDescriptionsFromTitleCheck = emf.loadUserDescriptionsFromJavadocMethodCheck();
+        return "<html>" + Integer.toString(checkstyleErrorDescriptions.size())
+                + "<br /> ******first error****** <br /> " + (checkstyleErrorDescriptions.size()!=0? checkstyleErrorDescriptions.get(0).toString() : "Empty set") +
                 "<br /> ******first error from TitleCheck****** <br /> " +
-                (errorDescriptionsFromTitleCheck.size()!=0 ? errorDescriptionsFromTitleCheck.get(0).toString() : "Empty set") + "</html>";
+                (checkstyleErrorDescriptionsFromTitleCheck.size()!=0 ? checkstyleErrorDescriptionsFromTitleCheck.get(0).toString() : "Empty set") + "</html>";
     }
 
     @GET
@@ -102,11 +104,36 @@ public class TestClass {
     }
 
     @GET
-    @Path("/index")
+    @Path("/home")
     public Response viewHome() {
-        File f = new File("/home/khermano/Devel/RepositoryReport_433511/src/main/webapp/index.html");
+        File f = new File("/home/khermano/Devel/RepositoryReport_433511/src/main/webapp/home.xhtml");  //zmen na relativnu cestu
         return Response.status(200).entity(f).build();
     }
+
+   /* @GET
+    @Path("/results")
+    public void viewResults(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/html");
+
+        PrintWriter out = response.getWriter();
+        String title = "Using GET Method to Read Form Data";
+        String docType =
+                "<!doctype html public \"-//w3c//dtd html 4.0 " +
+                        "transitional//en\">\n";
+
+        out.println(docType +
+                "<html>\n" +
+                "<head><title>" + title + "</title></head>\n" +
+                "<body bgcolor = \"#f0f0f0\">\n" +
+                "<h1 align = \"center\">" + title + "</h1>\n" +
+                "<ul>\n" +
+                "  <li><b>Repository URL</b>: "
+                + request.getParameter("repositoryURL") + "\n" +
+                "</ul>\n" +
+                "</body>" +
+                "</html>"
+        );
+    }*/
 
 
 //    public void main(String[] args) throws IOException {

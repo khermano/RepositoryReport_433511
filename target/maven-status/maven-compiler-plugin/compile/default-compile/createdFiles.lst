@@ -1,7 +1,9 @@
+JSF/EntityManager/EntityManagerFactory.class
 RestEasyPackage/RestEasy.class
 FindBugsPackage/ReportPackage/FindBugsBugInstance_.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceString.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceType.class
+JSF/Analysis.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceLocalVariable.class
 CheckstylePackage/CheckstyleReport.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceInt_.class
@@ -22,11 +24,10 @@ CheckstylePackage/CheckstyleFile_.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceProperty_.class
 RestEasyPackage/TestClass.class
 FindBugsPackage/ReportPackage/FindBugsBugInstance.class
+JSF/EntityManager/EntityManagerFactoryImpl.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceSourceLine.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceField_.class
-RestEasyPackage/EntityManagerFactoryImpl.class
 CheckstylePackage/CheckstyleError.class
+JSF/CheckstyleErrorDescription.class
 CheckstylePackage/CheckstyleFile.class
-RestEasyPackage/ErrorDescription.class
 FindBugsPackage/ReportPackage/BugInstancePackage/FindBugsBugInstanceClass.class
-RestEasyPackage/EntityManagerFactory.class

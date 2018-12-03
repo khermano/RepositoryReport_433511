@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>GitHub repository code analyse</title>
+</head>
+
+<h:body>
+    <center>
+        <h1>GitHub repository code analyse</h1>
+        <p>
+            <h:form>
+                <h:outputLabel for="txtRepositoryURL">
+                    <h:outputText value="Enter GitHub repository link: "/>
+                </h:outputLabel>
+                <h:inputText id="txtRepositoryLink" value="#{analysis.repositoryLink}"/>
+                <br/>
+                <h:commandButton id="cmdAnalyse" value="Analyse" action="#{analysis.analyseRepository}"/>
+            </h:form>
+        </p>
+    </center>
+</h:body>
+</html>
