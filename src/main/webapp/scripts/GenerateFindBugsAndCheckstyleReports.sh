@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd /tmp
+rm -rf Reports/
 mkdir Reports
 cd Reports/
 git clone $repositoryLink

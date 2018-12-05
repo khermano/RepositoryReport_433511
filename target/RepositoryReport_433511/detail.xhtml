@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>GitHub repository code analyse</title>
+</head>
+<body>
+    <h4>BugInstance</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="Id"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceDescription.bugInstanceId}"></h:outputText>
+
+            <h:outputText value="Type"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceDescription.type}"></h:outputText>
+
+            <h:outputText value="Priority"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceDescription.priority}"></h:outputText>
+
+            <h:outputText value="Rank"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceDescription.rank}"></h:outputText>
+
+            <h:outputText value="Abbrev"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceDescription.abbrev}"></h:outputText>
+
+            <h:outputText value="Category"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceDescription.category}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Class</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceClassDescription.className}"></h:outputText>
+
+            <h:outputText value="SourceLine_ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceClassDescription.classSourceLine.className}"></h:outputText>
+
+            <h:outputText value="SourceLine_Start"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceClassDescription.classSourceLine.start}"></h:outputText>
+
+            <h:outputText value="SourceLine_End"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceClassDescription.classSourceLine.end}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourceFile"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceClassDescription.classSourceLine.sourceFile}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourcePath"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceClassDescription.classSourceLine.sourcePath}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Field</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.className}"></h:outputText>
+
+            <h:outputText value="FieldName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.fieldName}"></h:outputText>
+
+            <h:outputText value="Signature"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.signature}"></h:outputText>
+
+            <h:outputText value="IsStatic"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.isStatic}"></h:outputText>
+
+            <h:outputText value="SourceLine_ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.fieldSourceLine.className}"></h:outputText>
+
+            <h:outputText value="SourceLine_Start"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.fieldSourceLine.start}"></h:outputText>
+
+            <h:outputText value="SourceLine_End"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.fieldSourceLine.end}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourceFile"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.fieldSourceLine.sourceFile}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourcePath"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceFieldDescription.fieldSourceLine.sourcePath}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Int</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="Value"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceIntDescription.intValue}"></h:outputText>
+
+            <h:outputText value="Role"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceIntDescription.intRole}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Local Variable</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="Name"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceLocalVariableDescription.localVariableName}"></h:outputText>
+
+            <h:outputText value="Register"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceLocalVariableDescription.register}"></h:outputText>
+
+            <h:outputText value="Pc"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceLocalVariableDescription.pc}"></h:outputText>
+
+            <h:outputText value="Role"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceLocalVariableDescription.localVariableRole}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Method</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.className}"></h:outputText>
+
+            <h:outputText value="Name"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.methodName}"></h:outputText>
+
+            <h:outputText value="Signature"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.signature}"></h:outputText>
+
+            <h:outputText value="IsStatic"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.isStatic}"></h:outputText>
+
+            <h:outputText value="SourceLine_ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.methodSourceLine.className}"></h:outputText>
+
+            <h:outputText value="SourceLine_Start"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.methodSourceLine.start}"></h:outputText>
+
+            <h:outputText value="SourceLine_End"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.methodSourceLine.end}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourceFile"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.methodSourceLine.sourceFile}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourcePath"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceMethodDescription.methodSourceLine.sourcePath}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Property</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="Name"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstancePropertyDescription.propertyName}"></h:outputText>
+
+            <h:outputText value="Value"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstancePropertyDescription.propertyValue}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Source Line</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceSourceLineDescription.className}"></h:outputText>
+
+            <h:outputText value="Start"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceSourceLineDescription.start}"></h:outputText>
+
+            <h:outputText value="End"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceSourceLineDescription.end}"></h:outputText>
+
+            <h:outputText value="SourceFile"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceSourceLineDescription.sourceFile}"></h:outputText>
+
+            <h:outputText value="SourcePath"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceSourceLineDescription.sourcePath}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>String</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="Value"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceStringDescription.stringValue}"></h:outputText>
+
+            <h:outputText value="Role"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceStringDescription.stringRole}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+
+    <br/>
+    <h4>Type</h4>
+    <br/>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
+            <h:outputText value="Descriptor"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.descriptor}"></h:outputText>
+
+            <h:outputText value="Role"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.role}"></h:outputText>
+
+            <h:outputText value="TypeParameters"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.typeParameters}"></h:outputText>
+
+            <h:outputText value="SourceLine_ClassName"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.typeSourceLine.className}"></h:outputText>
+
+            <h:outputText value="SourceLine_Start"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.typeSourceLine.start}"></h:outputText>
+
+            <h:outputText value="SourceLine_End"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.typeSourceLine.end}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourceFile"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.typeSourceLine.sourceFile}"></h:outputText>
+
+            <h:outputText value="SourceLine_SourcePath"></h:outputText>
+            <h:outputText value="#{bugInstanceController.bugInstanceTypeDescription.typeSourceLine.sourcePath}"></h:outputText>
+        </h:panelGrid>
+    </h:form>
+</body>
+</html>
