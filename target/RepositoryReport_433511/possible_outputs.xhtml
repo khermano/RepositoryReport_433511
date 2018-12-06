@@ -10,7 +10,7 @@
     <center>
         <h:form>
             <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
-                <h:commandButton value="Checkstyle - all errors" action="#{checkstyleErrorController.returnAll}"/>
+                <h:commandButton value="Checkstyle - All errors" action="#{checkstyleErrorController.returnAllErrors}"/>
                 <h:commandButton value="Checkstyle - LocalVariableName errors" action="#{checkstyleErrorController.returnLocalVariableNameErrors}"/>
 
                 <h:commandButton value="Checkstyle - MemberName errors" action="#{checkstyleErrorController.returnMemberNameErrors}"/>
@@ -33,6 +33,29 @@
 
                 <h:commandButton value="Checkstyle - OperatorWrap errors" action="#{checkstyleErrorController.returnOperatorWrapErrors}"/>
                 <h:commandButton value="Checkstyle - WhitespaceAround errors" action="#{checkstyleErrorController.returnWhitespaceAroundErrors}"/>
+
+                <h:commandButton value="FindBugs - All errors" action="#{bugInstanceController.returnAllErrors}"/>
+                <h:commandButton value="FindBugs - Priority 1 errors" action="#{bugInstanceController.returnPriority1Errors}"/>
+
+                <h:commandButton value="FindBugs - Priority 2 errors" action="#{bugInstanceController.returnPriority2Errors}"/>
+                <h:commandButton value="FindBugs - Priority 3 errors" action="#{bugInstanceController.returnPriority3Errors}"/>
+
+                <h:commandButton value="FindBugs - Rank scariest errors" action="#{bugInstanceController.returnRankScariestErrors}"/>
+                <h:commandButton value="FindBugs - Rank scary errors" action="#{bugInstanceController.returnRankScaryErrors}"/>
+
+                <h:commandButton value="FindBugs - Rank troubling errors" action="#{bugInstanceController.returnRankTroublingErrors}"/>
+                <h:commandButton value="FindBugs - Rank concern bugs errors" action="#{bugInstanceController.returnRankConcernBugsErrors}"/>
+
+                <h:commandButton value="FindBugs - Category CORRECTNESS errors" action="#{bugInstanceController.returnCategoryCorrectnessErrors}"/>
+                <h:commandButton value="FindBugs - Category BAD_PRACTICE errors" action="#{bugInstanceController.returnCategoryBadPracticeErrors}"/>
+
+                <h:commandButton value="FindBugs - Category STYLE errors" action="#{bugInstanceController.returnCategoryStyleErrors}"/>
+                <h:commandButton value="FindBugs - Category MT_CORRECTNESS errors" action="#{bugInstanceController.returnCategoryMtCorrectnessErrors}"/>
+
+                <h:commandButton value="FindBugs - Category MALICIOUS_CODE errors" action="#{bugInstanceController.returnCategoryMaliciousCodeErrors}"/>
+                <h:commandButton value="FindBugs - Category PERFORMANCE errors" action="#{bugInstanceController.returnCategoryPerformanceErrors}"/>
+
+                <h:commandButton value="FindBugs - Category I18N errors" action="#{bugInstanceController.returnCategoryI18nErrors}"/>
             </h:panelGrid>
         </h:form>
     </center>

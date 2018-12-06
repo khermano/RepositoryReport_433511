@@ -29,7 +29,11 @@ public interface DatabaseManager {
 
     CheckstyleFile getFile(Long id);
 
-    List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions();
+    List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions(String queryString);
+
+    List<BugInstanceDescription> loadBugInstances(String queryString);
+
+    /*List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions();
 
     List<CheckstyleErrorDescription> loadCheckstyleLocalVariableNameErrors();
 
@@ -59,15 +63,15 @@ public interface DatabaseManager {
 
     List<CheckstyleErrorDescription> loadCheckstyleWhitespaceAroundErrors();
 
-    List<CheckstyleErrorDescription> loadCheckstyleJavadocMethodErrors();
+    List<CheckstyleErrorDescription> loadCheckstyleJavadocMethodErrors(); */
 
-    List<BugInstanceDescription> loadBugInstances();
+    /*List<BugInstanceDescription> loadBugInstances();
 
     List<BugInstanceDescription> loadBugInstanceWithPriority1();
 
     List<BugInstanceDescription> loadBugInstanceWithRankScariest();
 
-    List<BugInstanceDescription> loadBugInstanceWithCategoryCorrectness();
+    List<BugInstanceDescription> loadBugInstanceWithCategoryCorrectness();*/
 
     BugInstanceClassDescription loadBugInstanceClassDescription(BigInteger id);
 

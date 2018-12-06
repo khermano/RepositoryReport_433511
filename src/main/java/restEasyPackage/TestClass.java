@@ -36,7 +36,7 @@ public class TestClass {
         Long id = error.getErrorId();
         CheckstyleError error2 = emf.getError(id);
         return error2.toString();
-    }*/
+    }
 
     @GET
     @Path("/testErrorFromXml2")
@@ -53,9 +53,9 @@ public class TestClass {
                 + "<br /> ******first error****** <br /> " + (checkstyleErrorDescriptions.size()!=0? checkstyleErrorDescriptions.get(0).toString() : "Empty set") +
                 "<br /> ******first error from TitleCheck****** <br /> " +
                 (checkstyleErrorDescriptionsFromTitleCheck.size()!=0 ? checkstyleErrorDescriptionsFromTitleCheck.get(0).toString() : "Empty set") + "</html>";
-    }
+    }*/
 
-    @GET
+   /* @GET
     @Path("/testFindBugs")
     public String testFindBugs() throws JAXBException {
         JAXBContext jc = JAXBContext.newInstance(FindBugsReport.class);

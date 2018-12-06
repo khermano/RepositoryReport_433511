@@ -6,7 +6,10 @@ import jsf.entityManager.DatabaseManager;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import java.util.ArrayList;
 import java.util.List;
+
+import static jsf.entityManager.DatabaseManagerImpl.*;
 
 @ManagedBean(name = "bugInstanceController")
 @SessionScoped
@@ -24,6 +27,7 @@ public class BugInstanceController {
     private BugInstanceSourceLineDescription bugInstanceSourceLineDescription;
     private BugInstanceStringDescription bugInstanceStringDescription;
     private BugInstanceTypeDescription bugInstanceTypeDescription;
+    private List<BugInstanceDescription> bugInstanceDescriptionList;
 
     public BugInstanceDescription getBugInstanceDescription() {
         return bugInstanceDescription;
@@ -105,13 +109,96 @@ public class BugInstanceController {
         this.bugInstanceTypeDescription = bugInstanceTypeDescription;
     }
 
-    public List<BugInstanceDescription> findAll() {
+    public List<BugInstanceDescription> getBugInstanceDescriptionList() {
+        return bugInstanceDescriptionList;
+    }
+
+    public void setBugInstanceDescriptionList(List<BugInstanceDescription> bugInstanceDescriptionList) {
+        this.bugInstanceDescriptionList = bugInstanceDescriptionList;
+    }
+
+    /*public List<BugInstanceDescription> findAll() {
         return databaseManager.loadBugInstances();
     }
 
-    /*public List<BugInstanceDescription> findBugInstancesWithPriority1() {
+    public List<BugInstanceDescription> findBugInstancesWithPriority1() {
 
     }*/
+
+    public String returnAllErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(ALL_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnPriority1Errors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(PRIORITY_1_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnPriority2Errors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(PRIORITY_2_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnPriority3Errors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(PRIORITY_3_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnRankScariestErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(RANK_SCARIEST_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnRankScaryErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(RANK_SCARY_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnRankTroublingErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(RANK_TROUBLING_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnRankConcernBugsErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(RANK_CONCERN_BUGS_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryCorrectnessErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_CORRECTNESS_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryBadPracticeErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_BAD_PRACTICE_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryStyleErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_STYLE_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryMtCorrectnessErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_MT_CORRECTNESS_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryMaliciousCodeErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_MALICIOUS_CODE_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryPerformanceErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_PERFORMANCE_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
+
+    public String returnCategoryI18nErrors() {
+        bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(CATEGORY_I18N_FINDBUGS_ERRORS_QUERY));
+        return "findbugs_errors";
+    }
 
     public String detail(BugInstanceDescription bugInstanceDescription) {
         this.bugInstanceDescription = bugInstanceDescription;

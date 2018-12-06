@@ -9,10 +9,11 @@ import javax.faces.bean.SessionScoped;
 import java.util.ArrayList;
 import java.util.List;
 
+import static jsf.entityManager.DatabaseManagerImpl.*;
+
 @ManagedBean(name = "checkstyleErrorController")
 @SessionScoped
 public class CheckstyleErrorController {
-
     @EJB
     private DatabaseManager databaseManager;
     private CheckstyleErrorDescription checkstyleErrorDescription = new CheckstyleErrorDescription();
@@ -34,147 +35,83 @@ public class CheckstyleErrorController {
         this.errorDescriptionList = errorDescriptionList;
     }
 
-    /*public List<CheckstyleErrorDescription> findAll() {
-        return databaseManager.loadCheckstyleErrorDescriptions();
-    }
-
-    public List<CheckstyleErrorDescription> findLocalVariableNameErrors() {
-        return databaseManager.loadCheckstyleLocalVariableNameErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findMemberNameErrors() {
-        return databaseManager.loadCheckstyleMemberNameErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findAbstractClassNameErrors() {
-        return databaseManager.loadCheckstyleAbstractClassNameErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findConstantNameErrors() {
-        return databaseManager.loadCheckstyleConstantNameErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findStaticVariableNameErrors() {
-        return databaseManager.loadCheckstyleStaticVariableNameErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findJavadocMethodErrors() {
-        return databaseManager.loadCheckstyleJavadocMethodErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findJavadocTypeErrors() {
-        return databaseManager.loadCheckstyleJavadocTypeErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findJavadocVariableErrors() {
-        return databaseManager.loadCheckstyleJavadocVariableErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findEmptyLineSeparatorErrors() {
-        return databaseManager.loadCheckstyleEmptyLineSeparatorErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findMethodParamPadErrors() {
-        return databaseManager.loadCheckstyleMethodParamPadErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findNoLineWrapErrors() {
-        return databaseManager.loadCheckstyleNoLineWrapErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findSingleSpaceSeparatorErrors() {
-        return databaseManager.loadCheckstyleSingleSpaceSeparatorErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findGenericWhitespaceErrors() {
-        return databaseManager.loadCheckstyleGenericWhitespaceErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findOperatorWrapErrors() {
-        return databaseManager.loadCheckstyleOperatorWrapErrors();
-    }
-
-    public List<CheckstyleErrorDescription> findWhitespaceAroundErrors() {
-        return databaseManager.loadCheckstyleWhitespaceAroundErrors();
-    }*/
-
-    public String returnAll() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions());
+    public String returnAllErrors() {
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(ALL_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnLocalVariableNameErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleLocalVariableNameErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(LOCAL_VARIABLE_NAME_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnMemberNameErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleMemberNameErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(MEMBER_NAME_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnAbstractClassNameErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleAbstractClassNameErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(ABSTRACT_CLASS_NAME_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnConstantNameErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleConstantNameErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(CONSTANT_NAME_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnStaticVariableNameErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleStaticVariableNameErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(STATIC_VARIABLE_NAME_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnJavadocMethodErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleJavadocMethodErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(JAVADOC_METHOD_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnJavadocTypeErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleJavadocTypeErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(JAVADOC_TYPE_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnJavadocVariableErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleJavadocVariableErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(JAVADOC_VARIABLE_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnEmptyLineSeparatorErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleEmptyLineSeparatorErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(EMPTY_LINE_SEPARATOR_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnMethodParamPadErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleMethodParamPadErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(METHOD_PARAM_PAD_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnNoLineWrapErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleNoLineWrapErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(NO_LINE_WRAP_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnSingleSpaceSeparatorErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleSingleSpaceSeparatorErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(SINGLE_SPACE_SEPARATOR_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnGenericWhitespaceErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleGenericWhitespaceErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(GENERIC_WHITESPACE_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnOperatorWrapErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleOperatorWrapErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(OPERATOR_WRAP_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 
     public String returnWhitespaceAroundErrors() {
-        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleWhitespaceAroundErrors());
+        errorDescriptionList = new ArrayList<CheckstyleErrorDescription>(databaseManager.loadCheckstyleErrorDescriptions(WHITESPACE_AROUND_CHECKSTYLE_ERRORS_QUERY));
         return "checkstyle_errors";
     }
 }

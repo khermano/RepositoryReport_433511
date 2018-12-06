@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>GitHub repository code analyse</title>
+</head>
+<h:body>
+    <h3>FindBugs Bug instance list</h3>
+    <h:form>
+        <h:dataTable var="f" value="#{bugInstanceController.findAll()}" border="1" cellpadding="2" cellspacing="2">
+            <h:column>
+                <f:facet name="header">Id</f:facet>
+                <h:outputText value="${f.bugInstanceId}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Type</f:facet>
+                <h:outputText value="${f.type}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Priority</f:facet>
+                <h:outputText value="${f.priority}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Rank</f:facet>
+                <h:outputText value="${f.rank}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Abbrev</f:facet>
+                <h:outputText value="${f.abbrev}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Category</f:facet>
+                <h:outputText value="${f.category}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Detail</f:facet>
+                <h:commandLink value="Detail" action="#{bugInstanceController.detail(f)}"></h:commandLink>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</h:body>
+</html>

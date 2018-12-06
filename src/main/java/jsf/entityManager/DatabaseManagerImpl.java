@@ -12,7 +12,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -21,6 +20,41 @@ public class DatabaseManagerImpl implements DatabaseManager {
 
     @PersistenceContext(unitName = "testPersistenceUnit")
     private EntityManager em;
+
+    public static final String ALL_CHECKSTYLE_ERRORS_QUERY = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId";
+    public static final String LOCAL_VARIABLE_NAME_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%LocalVariableNameCheck'";
+    public static final String MEMBER_NAME_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%MemberNameCheck'";
+    public static final String ABSTRACT_CLASS_NAME_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%AbstractClassNameCheck'";
+    public static final String CONSTANT_NAME_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%ConstantNameCheck'";
+    public static final String STATIC_VARIABLE_NAME_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%StaticVariableNameCheck'";
+    public static final String JAVADOC_METHOD_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%JavadocMethodCheck'";
+    public static final String JAVADOC_TYPE_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%JavadocTypeCheck'";
+    public static final String JAVADOC_VARIABLE_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%JavadocVariableCheck'";
+    public static final String EMPTY_LINE_SEPARATOR_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%EmptyLineSeparatorCheck'";
+    public static final String METHOD_PARAM_PAD_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%MethodParamPadCheck'";
+    public static final String NO_LINE_WRAP_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%NoLineWrapCheck'";
+    public static final String SINGLE_SPACE_SEPARATOR_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%SingleSpaceSeparatorCheck'";
+    public static final String GENERIC_WHITESPACE_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%GenericWhitespaceCheck'";
+    public static final String OPERATOR_WRAP_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%OperatorWrapCheck'";
+    public static final String WHITESPACE_AROUND_CHECKSTYLE_ERRORS_QUERY = ALL_CHECKSTYLE_ERRORS_QUERY + " WHERE e.checkSource LIKE '%WhitespaceAroundCheck'";
+
+    public static final String ALL_FINDBUGS_ERRORS_QUERY = "SELECT bugInstanceId, type, priority, rank, abbrev, category FROM BUG_INSTANCE";
+    public static final String PRIORITY_1_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE priority = '1'";
+    public static final String PRIORITY_2_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE priority = '2'";
+    public static final String PRIORITY_3_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE priority = '3'";
+    public static final String RANK_SCARIEST_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE rank BETWEEN '1' AND '4'";
+    public static final String RANK_SCARY_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE rank BETWEEN '5' AND '9'";
+    public static final String RANK_TROUBLING_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE rank BETWEEN '10' AND '14'";
+    public static final String RANK_CONCERN_BUGS_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE rank BETWEEN '15' AND '20'";
+    public static final String CATEGORY_CORRECTNESS_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'CORRECTNESS'";
+    public static final String CATEGORY_BAD_PRACTICE_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'BAD_PRACTICE'";
+    public static final String CATEGORY_STYLE_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'STYLE'";
+    public static final String CATEGORY_MT_CORRECTNESS_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'MT_CORRECTNESS'";
+    public static final String CATEGORY_MALICIOUS_CODE_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'MALICIOUS_CODE'";
+    public static final String CATEGORY_PERFORMANCE_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'PERFORMANCE'";
+    public static final String CATEGORY_I18N_FINDBUGS_ERRORS_QUERY = ALL_FINDBUGS_ERRORS_QUERY + " WHERE category = 'I18N'";
+
+
 
     public void addError(CheckstyleError error){
         em.persist(error);
@@ -169,6 +203,15 @@ public class DatabaseManagerImpl implements DatabaseManager {
         return em.find(CheckstyleFile.class, id);
     }
 
+
+
+    public List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions(String queryString) {
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+
+/*
     public List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions() {
         String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId";
         Query query = em.createNativeQuery(queryString);
@@ -265,7 +308,15 @@ public class DatabaseManagerImpl implements DatabaseManager {
         return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
     }
 
-    public List<BugInstanceDescription> loadBugInstances() {
+    */
+
+    public List<BugInstanceDescription> loadBugInstances(String queryString) {
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceDescription.class)).list();
+    }
+
+
+    /*public List<BugInstanceDescription> loadBugInstances() {
         String queryString = "SELECT bugInstanceId, type, priority, rank, abbrev, category FROM BUG_INSTANCE";
         Query query = em.createNativeQuery(queryString);
         return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceDescription.class)).list();
@@ -287,7 +338,7 @@ public class DatabaseManagerImpl implements DatabaseManager {
         String queryString = "SELECT type, priority, rank, abbrev, category FROM BUG_INSTANCE WHERE category = 'CORRECTNESS'";
         Query query = em.createNativeQuery(queryString);
         return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceDescription.class)).list();
-    }
+    }*/
 
     public BugInstanceClassDescription loadBugInstanceClassDescription(BigInteger id) {
         String queryString = "SELECT b.className FROM BUG_INSTANCE a JOIN BUG_INSTANCE_CLASS b ON a.bugInstanceId = b.bugInstanceId WHERE a.bugInstanceId = '" + id + "'";
