@@ -9,7 +9,7 @@
 <h:body>
     <h3>Checkstyle error list</h3>
     <h:form>
-        <h:dataTable var="e" value="#{checkstyleErrorController.findNoLineWrapErrors()}" border="1" cellpadding="2" cellspacing="2">
+        <h:dataTable var="e" value="#{checkstyleErrorController.getErrorDescriptionList()}" border="1" cellpadding="2" cellspacing="2">
             <h:column>
                 <f:facet name="header">ErrorId</f:facet>
                 <h:outputText value="${e.errorId}"></h:outputText>

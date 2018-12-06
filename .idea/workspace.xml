@@ -2,44 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7705cb3a-cd2f-4e08-8ba1-7fc4001853ed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_abstractClassName_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_all_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_constantName_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_emptyLineSeparator_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_genericWhitespace_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocMethod_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocType_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocVariable_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_localVariableName_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_memberName_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_methodParamPad_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_noLineWrap_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_operatorWrap_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_singleSpaceSeparator_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_staticVariableName_errors.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_whitespaceAround_errors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsf/Analysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/controller/BugInstanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsf/controller/BugInstanceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restEasyPackage/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restEasyPackage/TestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/Analysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/Analysis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/controller/BugInstanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/controller/BugInstanceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/controller/CheckstyleErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/controller/CheckstyleErrorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entityManager/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entityManager/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entityManager/DatabaseManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entityManager/DatabaseManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/restEasyPackage/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/restEasyPackage/TestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/Analysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsf/Analysis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/controller/BugInstanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsf/controller/BugInstanceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/controller/CheckstyleErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsf/controller/CheckstyleErrorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entityManager/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsf/entityManager/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entityManager/DatabaseManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsf/entityManager/DatabaseManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/restEasyPackage/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restEasyPackage/TestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_abstractClassName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_all_errors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_constantName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_emptyLineSeparator_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_genericWhitespace_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocMethod_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocType_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocVariable_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_localVariableName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_memberName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_methodParamPad_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_noLineWrap_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_operatorWrap_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_singleSpaceSeparator_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_staticVariableName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_whitespaceAround_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/all_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_abstractClassName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_constantName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_emptyLineSeparator_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_genericWhitespace_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_javadocMethod_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_javadocType_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_javadocVariable_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_methodParamPad_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_noLineWrap_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_operatorWrap_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_singleSpaceSeparator_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_staticVariableName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_whitespaceAround_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/localVariableName_errors.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/memberName_errors.xhtml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,54 +50,22 @@
       <file leaf-file-name="CheckstyleErrorController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="38" />
+            <state relative-caret-position="142">
+              <caret line="28" column="67" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3241#3242#0" expanded="true" />
-                <element signature="e#3298#3299#0" expanded="true" />
-                <element signature="e#3341#3342#0" expanded="true" />
-                <element signature="e#3382#3383#0" expanded="true" />
-                <element signature="e#3425#3426#0" expanded="true" />
-                <element signature="e#3461#3462#0" expanded="true" />
-                <element signature="e#3504#3505#0" expanded="true" />
-                <element signature="e#3540#3541#0" expanded="true" />
-                <element signature="e#3583#3584#0" expanded="true" />
-                <element signature="e#3619#3620#0" expanded="true" />
-                <element signature="e#3662#3663#0" expanded="true" />
-                <element signature="e#3698#3699#0" expanded="true" />
-                <element signature="e#3741#3742#0" expanded="true" />
-                <element signature="e#3777#3778#0" expanded="true" />
-                <element signature="e#3820#3821#0" expanded="true" />
-                <element signature="e#3856#3857#0" expanded="true" />
-                <element signature="e#3899#3900#0" expanded="true" />
-                <element signature="e#3935#3936#0" expanded="true" />
-                <element signature="e#3978#3979#0" expanded="true" />
-                <element signature="e#4014#4015#0" expanded="true" />
-                <element signature="e#4057#4058#0" expanded="true" />
-                <element signature="e#4093#4094#0" expanded="true" />
-                <element signature="e#4136#4137#0" expanded="true" />
-                <element signature="e#4172#4173#0" expanded="true" />
-                <element signature="e#4215#4216#0" expanded="true" />
-                <element signature="e#4251#4252#0" expanded="true" />
-                <element signature="e#4294#4295#0" expanded="true" />
-                <element signature="e#4330#4331#0" expanded="true" />
-                <element signature="e#4373#4374#0" expanded="true" />
-                <element signature="e#4409#4410#0" expanded="true" />
-                <element signature="e#4452#4453#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkstyle_whitespaceAround_errors.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_whitespaceAround_errors.xhtml">
+      <file leaf-file-name="checkstyle_errors.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="-38">
+              <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -116,16 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="possible_outputs.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="possible_outputs.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
@@ -158,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/success.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceDetailDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceLocalVariableDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstancePropertyDescripiton.java" />
@@ -192,7 +145,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/checkstyle_staticVariableName_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_all_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_abstractClassName_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_constantName_errors.xhtml" />
@@ -209,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_singleSpaceSeparator_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_staticVariableName_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_whitespaceAround_errors.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml" />
       </list>
     </option>
   </component>
@@ -488,7 +442,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -499,10 +452,10 @@
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32959402" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32819384" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49893162" visible="true" weight="0.3325766" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49893162" visible="true" weight="0.3325766" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.64715445" visible="true" weight="0.2815171" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.64715445" visible="true" weight="0.2815171" />
       <window_info anchor="bottom" id="Analysis" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32599118" />
       <window_info id="Structure" order="5" sideWeight="0.35284552" side_tool="true" weight="0.2815171" />
@@ -865,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -879,13 +825,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_all_errors.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -987,57 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3241#3242#0" expanded="true" />
-            <element signature="e#3298#3299#0" expanded="true" />
-            <element signature="e#3341#3342#0" expanded="true" />
-            <element signature="e#3382#3383#0" expanded="true" />
-            <element signature="e#3425#3426#0" expanded="true" />
-            <element signature="e#3461#3462#0" expanded="true" />
-            <element signature="e#3504#3505#0" expanded="true" />
-            <element signature="e#3540#3541#0" expanded="true" />
-            <element signature="e#3583#3584#0" expanded="true" />
-            <element signature="e#3619#3620#0" expanded="true" />
-            <element signature="e#3662#3663#0" expanded="true" />
-            <element signature="e#3698#3699#0" expanded="true" />
-            <element signature="e#3741#3742#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#3820#3821#0" expanded="true" />
-            <element signature="e#3856#3857#0" expanded="true" />
-            <element signature="e#3899#3900#0" expanded="true" />
-            <element signature="e#3935#3936#0" expanded="true" />
-            <element signature="e#3978#3979#0" expanded="true" />
-            <element signature="e#4014#4015#0" expanded="true" />
-            <element signature="e#4057#4058#0" expanded="true" />
-            <element signature="e#4093#4094#0" expanded="true" />
-            <element signature="e#4136#4137#0" expanded="true" />
-            <element signature="e#4172#4173#0" expanded="true" />
-            <element signature="e#4215#4216#0" expanded="true" />
-            <element signature="e#4251#4252#0" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4330#4331#0" expanded="true" />
-            <element signature="e#4373#4374#0" expanded="true" />
-            <element signature="e#4409#4410#0" expanded="true" />
-            <element signature="e#4452#4453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/checkstyle_config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jsf/Analysis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1059,6 +947,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/checkstyle_config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
         </state>
       </provider>
     </entry>
