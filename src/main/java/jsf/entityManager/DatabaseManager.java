@@ -31,7 +31,35 @@ public interface DatabaseManager {
 
     List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions();
 
-    List<CheckstyleErrorDescription> loadUserDescriptionsFromJavadocMethodCheck();
+    List<CheckstyleErrorDescription> loadCheckstyleLocalVariableNameErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleMemberNameErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleAbstractClassNameErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleConstantNameErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleStaticVariableNameErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleJavadocTypeErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleJavadocVariableErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleEmptyLineSeparatorErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleMethodParamPadErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleNoLineWrapErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleSingleSpaceSeparatorErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleGenericWhitespaceErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleOperatorWrapErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleWhitespaceAroundErrors();
+
+    List<CheckstyleErrorDescription> loadCheckstyleJavadocMethodErrors();
 
     List<BugInstanceDescription> loadBugInstances();
 

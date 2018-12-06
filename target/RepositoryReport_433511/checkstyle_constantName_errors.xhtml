@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>GitHub repository code analyse</title>
+</head>
+<h:body>
+    <h3>Checkstyle error list</h3>
+    <h:form>
+        <h:dataTable var="e" value="#{checkstyleErrorController.findConstantNameErrors()}" border="1" cellpadding="2" cellspacing="2">
+            <h:column>
+                <f:facet name="header">ErrorId</f:facet>
+                <h:outputText value="${e.errorId}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">ClassLine</f:facet>
+                <h:outputText value="${e.classLine}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">ClassColumn</f:facet>
+                <h:outputText value="${e.classColumn}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">ErrorMessage</f:facet>
+                <h:outputText value="${e.errorMessage}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">ErrorSeverity</f:facet>
+                <h:outputText value="${e.errorSeverity}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">CheckSource</f:facet>
+                <h:outputText value="${e.checkSource}"></h:outputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">FileName</f:facet>
+                <h:outputText value="${e.fileName}"></h:outputText>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</h:body>
+</html>

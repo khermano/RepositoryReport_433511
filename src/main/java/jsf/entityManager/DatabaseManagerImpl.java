@@ -175,8 +175,92 @@ public class DatabaseManagerImpl implements DatabaseManager {
         return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
     }
 
-    public List<CheckstyleErrorDescription> loadUserDescriptionsFromJavadocMethodCheck() {
-        String queryString = "SELECT e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE checkSource LIKE '%JavadocMethodCheck'";
+    public List<CheckstyleErrorDescription> loadCheckstyleLocalVariableNameErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%LocalVariableNameCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleMemberNameErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%MemberNameCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleAbstractClassNameErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%AbstractClassNameCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleConstantNameErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%ConstantNameCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleStaticVariableNameErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%StaticVariableNameCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleJavadocMethodErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%JavadocMethodCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleJavadocTypeErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%JavadocTypeCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleJavadocVariableErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%JavadocVariableCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleEmptyLineSeparatorErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%EmptyLineSeparatorCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleMethodParamPadErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%MethodParamPadCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleNoLineWrapErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%NoLineWrapCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleSingleSpaceSeparatorErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%SingleSpaceSeparatorCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleGenericWhitespaceErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%GenericWhitespaceCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleOperatorWrapErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%OperatorWrapCheck'";
+        Query query = em.createNativeQuery(queryString);
+        return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
+    }
+
+    public List<CheckstyleErrorDescription> loadCheckstyleWhitespaceAroundErrors() {
+        String queryString = "SELECT e.errorId, e.classLine, e.classColumn, e.errorMessage, e.errorSeverity, e.checkSource, f.fileName FROM CHECKSTYLE_ERRORS e JOIN CHECKSTYLE_FILES f ON e.fileId = f.fileId WHERE e.checkSource LIKE '%WhitespaceAroundCheck'";
         Query query = em.createNativeQuery(queryString);
         return query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(CheckstyleErrorDescription.class)).list();
     }

@@ -53,7 +53,7 @@ public class Analysis {
             persistCheckstyleData();
             persistFindBugsData();
             
-            return "success";
+            return "possible_outputs";
         }
         return "fail";
     }

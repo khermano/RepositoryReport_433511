@@ -48,7 +48,7 @@ public class TestClass {
 
         emf.addFiles(report.getFileList());
         List<CheckstyleErrorDescription> checkstyleErrorDescriptions = emf.loadCheckstyleErrorDescriptions();
-        List<CheckstyleErrorDescription> checkstyleErrorDescriptionsFromTitleCheck = emf.loadUserDescriptionsFromJavadocMethodCheck();
+        List<CheckstyleErrorDescription> checkstyleErrorDescriptionsFromTitleCheck = emf.loadCheckstyleJavadocMethodErrors();
         return "<html>" + Integer.toString(checkstyleErrorDescriptions.size())
                 + "<br /> ******first error****** <br /> " + (checkstyleErrorDescriptions.size()!=0? checkstyleErrorDescriptions.get(0).toString() : "Empty set") +
                 "<br /> ******first error from TitleCheck****** <br /> " +

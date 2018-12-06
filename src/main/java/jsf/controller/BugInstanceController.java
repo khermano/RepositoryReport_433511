@@ -109,6 +109,10 @@ public class BugInstanceController {
         return databaseManager.loadBugInstances();
     }
 
+    /*public List<BugInstanceDescription> findBugInstancesWithPriority1() {
+
+    }*/
+
     public String detail(BugInstanceDescription bugInstanceDescription) {
         this.bugInstanceDescription = bugInstanceDescription;
 
