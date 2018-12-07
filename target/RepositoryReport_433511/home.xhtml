@@ -14,9 +14,9 @@
                 <h:outputLabel for="txtRepositoryURL">
                     <h:outputText value="Enter GitHub repository HTTPS link or SSH key: "/>
                 </h:outputLabel>
-                <h:inputText id="txtRepositoryLink" value="#{analysis.repositoryLink}"/>
+                <h:inputText id="txtRepositoryLink" value="#{homeController.repositoryLink}"/>
                 <br/>
-                <h:commandButton id="cmdAnalyse" value="Analyse" action="#{analysis.analyseRepository}"/>
+                <h:commandButton id="cmdAnalyse" value="Analyse" action="#{homeController.analyseRepository}"/>
             </h:form>
         </p>
     </center>
