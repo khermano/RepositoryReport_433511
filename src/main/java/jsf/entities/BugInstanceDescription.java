@@ -10,19 +10,6 @@ public class BugInstanceDescription {
     private String abbrev;
     private String category;
 
-    public BugInstanceDescription() {
-
-    }
-
-    public BugInstanceDescription(BigInteger bugInstanceId, String type, byte priority, int rank, String abbrev, String category) {
-        this.bugInstanceId=bugInstanceId;
-        this.type = type;
-        this.priority = priority;
-        this.rank = rank;
-        this.abbrev = abbrev;
-        this.category = category;
-    }
-
     public BigInteger getBugInstanceId() {
         return bugInstanceId;
     }
@@ -69,11 +56,5 @@ public class BugInstanceDescription {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    @Override
-    public String toString() {
-        return "bugInstanceId: " + bugInstanceId + ", type: " + type + ", priority: " + priority + ", rank: " + rank
-                + ", abbrev: " + abbrev + ", category: " + category;
     }
 }

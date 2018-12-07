@@ -117,14 +117,6 @@ public class BugInstanceController {
         this.bugInstanceDescriptionList = bugInstanceDescriptionList;
     }
 
-    /*public List<BugInstanceDescription> findAll() {
-        return databaseManager.loadBugInstances();
-    }
-
-    public List<BugInstanceDescription> findBugInstancesWithPriority1() {
-
-    }*/
-
     public String returnAllErrors() {
         bugInstanceDescriptionList = new ArrayList<BugInstanceDescription>(databaseManager.loadBugInstances(ALL_FINDBUGS_ERRORS_QUERY));
         return "findbugs_errors";

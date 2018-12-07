@@ -35,18 +35,6 @@ public class CheckstyleError {
     @XmlAttribute()
     private String source;
 
-    public CheckstyleError(byte column, byte line, String message, String severity, String source) {
-        this.line = line;
-        this.column = column;
-        this.message = message;
-        this.severity = severity;
-        this.source = source;
-    }
-
-    public CheckstyleError() {
-
-    }
-
     public Long getErrorId() {
         return errorId;
     }
@@ -93,11 +81,5 @@ public class CheckstyleError {
 
     public void setSource(String source) {
         this.source = source;
-    }
-
-    @Override
-    public String toString() {
-        return "Error errorId: " + errorId + ", classLine: " + line + ", classColumn: " + column + ", errorMessage: " + message +
-                ", errorSeverity: " + severity + ", checkSource: " + source;
     }
 }

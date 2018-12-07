@@ -2,7 +2,6 @@ package checkstylePackage;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.Collections;
 import java.util.List;
 
 @Entity
@@ -43,7 +42,7 @@ public class CheckstyleFile {
     }
 
     public List<CheckstyleError> getErrorList() {
-        return Collections.unmodifiableList(errorList);
+        return errorList;
     }
 
     public void setErrorList(List<CheckstyleError> errorList) {

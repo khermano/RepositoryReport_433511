@@ -7,17 +7,6 @@ public class BugInstanceSourceLineDescription {
     private String sourceFile;
     private String sourcePath;
 
-    public BugInstanceSourceLineDescription() {
-    }
-
-    public BugInstanceSourceLineDescription(String className, int start, int end, String sourceFile, String sourcePath) {
-        this.className = className;
-        this.start = start;
-        this.end = end;
-        this.sourceFile = sourceFile;
-        this.sourcePath = sourcePath;
-    }
-
     public String getClassName() {
         return className;
     }

@@ -6,16 +6,6 @@ public class BugInstanceLocalVariableDescription {
     private int pc;
     private String localVariableRole;
 
-    public BugInstanceLocalVariableDescription() {
-    }
-
-    public BugInstanceLocalVariableDescription(String localVariableName, short register, int pc, String localVariableRole) {
-        this.localVariableName = localVariableName;
-        this.register = register;
-        this.pc = pc;
-        this.localVariableRole = localVariableRole;
-    }
-
     public String getLocalVariableName() {
         return localVariableName;
     }

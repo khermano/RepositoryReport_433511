@@ -7,20 +7,6 @@ public class BugInstanceMethodDescription {
     private boolean isStatic;
     private BugInstanceSourceLineDescription methodSourceLine;
 
-    public BugInstanceMethodDescription() {
-    }
-
-    /*public BugInstanceMethodDescription(String className, String methodName, String signature, boolean isStatic, int start, int end, String sourceFile, String sourcePath) {
-        this.className = className;
-        this.methodName = methodName;
-        this.signature = signature;
-        this.isStatic = isStatic;
-        this.start = start;
-        this.end = end;
-        this.sourceFile = sourceFile;
-        this.sourcePath = sourcePath;
-    }*/
-
     public String getClassName() {
         return className;
     }

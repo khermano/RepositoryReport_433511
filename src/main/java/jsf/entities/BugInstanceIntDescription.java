@@ -6,14 +6,6 @@ public class BugInstanceIntDescription {
     private BigInteger intValue;
     private String intRole;
 
-    public BugInstanceIntDescription() {
-    }
-
-    public BugInstanceIntDescription(BigInteger intValue, String intRole) {
-        this.intValue = intValue;
-        this.intRole = intRole;
-    }
-
     public BigInteger getIntValue() {
         return intValue;
     }

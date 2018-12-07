@@ -4,14 +4,6 @@ public class BugInstanceStringDescription {
     private String stringValue;
     private String stringRole;
 
-    public BugInstanceStringDescription() {
-    }
-
-    public BugInstanceStringDescription(String stringValue, String stringRole) {
-        this.stringValue = stringValue;
-        this.stringRole = stringRole;
-    }
-
     public String getStringValue() {
         return stringValue;
     }

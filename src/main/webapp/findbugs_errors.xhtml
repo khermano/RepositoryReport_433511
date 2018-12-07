@@ -9,7 +9,7 @@
 <h:body>
     <h3>FindBugs Bug instance list</h3>
     <h:form>
-        <h:dataTable var="f" value="#{bugInstanceController.findAll()}" border="1" cellpadding="2" cellspacing="2">
+        <h:dataTable var="f" value="#{bugInstanceController.getBugInstanceDescriptionList()}" border="1" cellpadding="2" cellspacing="2">
             <h:column>
                 <f:facet name="header">Id</f:facet>
                 <h:outputText value="${f.bugInstanceId}"></h:outputText>

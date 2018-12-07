@@ -5,14 +5,6 @@ public class BugInstanceClassDescription {
     private String className;
     private BugInstanceSourceLineDescription classSourceLine;
 
-    public BugInstanceClassDescription() {
-    }
-
-    /*public BugInstanceClassDescription(String className, BugInstanceSourceLineDescription classSourceLine) {
-        this.className = className;
-        this.classSourceLine = classSourceLine;
-    }*/
-
     public String getClassName() {
         return className;
     }

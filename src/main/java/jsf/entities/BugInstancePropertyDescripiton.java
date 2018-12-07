@@ -4,14 +4,6 @@ public class BugInstancePropertyDescripiton {
     private String propertyName;
     private String propertyValue;
 
-    public BugInstancePropertyDescripiton() {
-    }
-
-    public BugInstancePropertyDescripiton(String propertyName, String propertyValue) {
-        this.propertyName = propertyName;
-        this.propertyValue = propertyValue;
-    }
-
     public String getPropertyName() {
         return propertyName;
     }

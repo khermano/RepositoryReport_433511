@@ -7,7 +7,6 @@ findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod_.clas
 findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine.class
 findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType_.class
 jsf/entityManager/DatabaseManager.class
-restEasyPackage/RestEasy.class
 checkstylePackage/CheckstyleError_.class
 findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable.class
 findBugsPackage/reportPackage/FindBugsBugInstance_.class
@@ -31,7 +30,6 @@ jsf/entityManager/DatabaseManagerImpl.class
 findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass_.class
 checkstylePackage/CheckstyleReport.class
 checkstylePackage/CheckstyleFile.class
-restEasyPackage/TestClass.class
 checkstylePackage/CheckstyleFile_.class
 jsf/entities/BugInstanceLocalVariableDescription.class
 jsf/entities/BugInstanceSourceLineDescription.class

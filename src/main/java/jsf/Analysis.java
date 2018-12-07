@@ -3,7 +3,6 @@ package jsf;
 import checkstylePackage.CheckstyleReport;
 import findBugsPackage.FindBugsReport;
 import jsf.entityManager.DatabaseManager;
-
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -22,13 +21,8 @@ public class Analysis {
 
     @EJB
     private DatabaseManager databaseManager;
-
     private String repositoryLink;
     private String repositoryName;
-
-    public Analysis() {
-
-    }
 
     public String getRepositoryLink() {
         return repositoryLink;
@@ -79,15 +73,15 @@ public class Analysis {
     }
 
     private void generateReports() throws InterruptedException, IOException {
-        ProcessBuilder processBuilder2 = new ProcessBuilder("sh /tmp/deployedWar/scripts/GenerateFindBugsAndCheckstyleReports.sh".split("\\s+"));
+        ProcessBuilder processBuilder = new ProcessBuilder("sh /tmp/deployedWar/scripts/GenerateFindBugsAndCheckstyleReports.sh".split("\\s+"));
         
-        Map<String, String> environment = processBuilder2.environment();
+        Map<String, String> environment = processBuilder.environment();
         
         environment.put("repositoryLink", repositoryLink);
         environment.put("repositoryName", repositoryName);
         
-        Process process2 = processBuilder2.start();
-        process2.waitFor();
+        Process process = processBuilder.start();
+        process.waitFor();
     }
 
     private void persistCheckstyleData() throws JAXBException {

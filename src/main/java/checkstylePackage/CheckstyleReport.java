@@ -1,7 +1,6 @@
 package checkstylePackage;
 
 import javax.xml.bind.annotation.*;
-import java.util.Collections;
 import java.util.List;
 
 @XmlRootElement(name = "checkstyle")
@@ -12,7 +11,7 @@ public class CheckstyleReport {
     private List<CheckstyleFile> fileList;
 
     public List<CheckstyleFile> getFileList() {
-        return Collections.unmodifiableList(fileList);
+        return fileList;
     }
 
     public void setFileList(List<CheckstyleFile> fileList) {

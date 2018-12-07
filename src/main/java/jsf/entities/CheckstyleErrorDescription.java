@@ -11,20 +11,6 @@ public class CheckstyleErrorDescription {
     private String checkSource;
     private String fileName;
 
-    public CheckstyleErrorDescription() {
-
-    }
-
-    public CheckstyleErrorDescription(BigInteger errorId, byte classLine, byte classColumn, String errorMessage, String errorSeverity, String checkSource, String fileName) {
-        this.errorId = errorId;
-        this.classLine = classLine;
-        this.classColumn = classColumn;
-        this.errorMessage = errorMessage;
-        this.errorSeverity = errorSeverity;
-        this.checkSource = checkSource;
-        this.fileName = fileName;
-    }
-
     public BigInteger getErrorId() {
         return errorId;
     }
@@ -79,11 +65,5 @@ public class CheckstyleErrorDescription {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
-    }
-
-    @Override
-    public String toString() {
-        return "Error: classLine: " + classLine + ", classColumn: " + classColumn + ", errorMessage: " + errorMessage +
-                ", errorSeverity: " + errorSeverity + ", checkSource: " + checkSource + ", fileName: " + fileName;
     }
 }

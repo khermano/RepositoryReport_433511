@@ -7,20 +7,6 @@ public class BugInstanceFieldDescription {
     private boolean isStatic;
     private BugInstanceSourceLineDescription fieldSourceLine;
 
-    public BugInstanceFieldDescription() {
-    }
-
-    /*public BugInstanceFieldDescription(String className, String fieldName, String signature, boolean isStatic, int start, int end, String sourceFile, String sourcePath) {
-        this.className = className;
-        this.fieldName = fieldName;
-        this.signature = signature;
-        this.isStatic = isStatic;
-        this.start = start;
-        this.end = end;
-        this.sourceFile = sourceFile;
-        this.sourcePath = sourcePath;
-    }*/
-
     public String getClassName() {
         return className;
     }

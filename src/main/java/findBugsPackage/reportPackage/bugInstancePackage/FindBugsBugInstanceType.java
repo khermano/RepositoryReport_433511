@@ -2,7 +2,6 @@ package findBugsPackage.reportPackage.bugInstancePackage;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
-import java.util.Collections;
 import java.util.List;
 
 @Entity
@@ -67,7 +66,7 @@ public class FindBugsBugInstanceType {
     }
 
     public List<FindBugsBugInstanceSourceLine> getSourceLineList() {
-        return Collections.unmodifiableList(sourceLineList);
+        return sourceLineList;
     }
 
     public void setSourceLineList(List<FindBugsBugInstanceSourceLine> sourceLineList) {

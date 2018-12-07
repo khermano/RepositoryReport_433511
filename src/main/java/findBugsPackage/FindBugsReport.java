@@ -3,7 +3,6 @@ package findBugsPackage;
 import findBugsPackage.reportPackage.FindBugsBugInstance;
 
 import javax.xml.bind.annotation.*;
-import java.util.Collections;
 import java.util.List;
 
 @XmlRootElement(name = "BugCollection")
@@ -14,7 +13,7 @@ public class FindBugsReport {
     private List<FindBugsBugInstance> findBugsBugInstances;
 
     public List<FindBugsBugInstance> getFindBugsBugInstanceList() {
-        return Collections.unmodifiableList(findBugsBugInstances);
+        return findBugsBugInstances;
     }
 
     public void setFindBugsBugInstanceList(List<FindBugsBugInstance> findBugsBugInstances) {
