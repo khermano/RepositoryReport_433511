@@ -41,6 +41,7 @@ public class HomeController {
                 repositoryName = repositoryLink.split("\\.")[1].split("/")[1];
             }
 
+            databaseManager.cleanTables();
             setUpEnvironment();
             unzipDeployedFiles();
             generateReports();

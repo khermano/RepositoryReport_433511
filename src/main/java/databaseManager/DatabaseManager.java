@@ -45,4 +45,5 @@ public interface DatabaseManager {
 
     BugInstanceSourceLineDescription loadBugInstanceTypeSourceLineDescription(BigInteger id);
 
+    void cleanTables();
 }

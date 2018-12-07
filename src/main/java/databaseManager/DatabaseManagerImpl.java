@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.math.BigInteger;
+import java.sql.ResultSet;
 import java.util.Iterator;
 import java.util.List;
 
@@ -326,6 +327,50 @@ public class DatabaseManagerImpl implements DatabaseManager {
             return (BugInstanceSourceLineDescription) query.unwrap(org.hibernate.Query.class ).setResultTransformer(Transformers.aliasToBean(BugInstanceSourceLineDescription.class)).list().get(0);
         } catch (IndexOutOfBoundsException e) {
             return null;
+        }
+    }
+
+    public void cleanTables() {
+        Query checkstyleCountQuery = em.createNativeQuery("SELECT COUNT(fileId) FROM CHECKSTYLE_FILES");
+        Query findbugsCountQuery = em.createNativeQuery("SELECT COUNT(bugInstanceId) FROM BUG_INSTANCE");
+
+        if (BigInteger.valueOf(0).compareTo((BigInteger)checkstyleCountQuery.unwrap(org.hibernate.Query.class).list().get(0)) == -1) {
+            Query deleteCheckstyleErrorsData = em.createNativeQuery("DELETE FROM CHECKSTYLE_ERRORS");
+            deleteCheckstyleErrorsData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteCheckstyleFilesData = em.createNativeQuery("DELETE FROM CHECKSTYLE_FILES");
+            deleteCheckstyleFilesData.unwrap(org.hibernate.Query.class).executeUpdate();
+        }
+        if (BigInteger.valueOf(0).compareTo((BigInteger)findbugsCountQuery.unwrap(org.hibernate.Query.class).list().get(0)) == -1) {
+            Query deleteSourceLineData = em.createNativeQuery("DELETE FROM SOURCE_LINE");
+            deleteSourceLineData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceTypeData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_TYPE");
+            deleteBugInstanceTypeData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceStringData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_STRING");
+            deleteBugInstanceStringData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstancePropertyData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_PROPERTY");
+            deleteBugInstancePropertyData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceMethodData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_METHOD");
+            deleteBugInstanceMethodData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceLocalVariableData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_LOCAL_VARIABLE");
+            deleteBugInstanceLocalVariableData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceIntData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_INT");
+            deleteBugInstanceIntData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceFieldData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_FIELD");
+            deleteBugInstanceFieldData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceClassData = em.createNativeQuery("DELETE FROM BUG_INSTANCE_CLASS");
+            deleteBugInstanceClassData.unwrap(org.hibernate.Query.class).executeUpdate();
+
+            Query deleteBugInstanceData = em.createNativeQuery("DELETE FROM BUG_INSTANCE");
+            deleteBugInstanceData.unwrap(org.hibernate.Query.class).executeUpdate();
         }
     }
 }

@@ -3,138 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7705cb3a-cd2f-4e08-8ba1-7fc4001853ed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checkstylePackage/CheckstyleError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checkstylePackage/CheckstyleFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checkstylePackage/CheckstyleReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/FindBugsReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/FindBugsReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/FindBugsBugInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceLocalVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceSourceLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/controller/BugInstanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/controller/CheckstyleErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/CheckstyleErrorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceClassDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceClassDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceFieldDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceFieldDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceIntDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceIntDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceLocalVariableDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceLocalVariableDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceMethodDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceMethodDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstancePropertyDescripiton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstancePropertyDescripiton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceSourceLineDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceSourceLineDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceStringDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceStringDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceTypeDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/BugInstanceTypeDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entities/CheckstyleErrorDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/entities/CheckstyleErrorDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/entityManager/DatabaseManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/checkstylePackage/CheckstyleError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/checkstylePackage/CheckstyleError_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/checkstylePackage/CheckstyleFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/checkstylePackage/CheckstyleFile_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/checkstylePackage/CheckstyleReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/FindBugsReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/FindBugsBugInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/FindBugsBugInstance_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceField_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceInt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceInt_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceProperty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceProperty_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceString_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/Analysis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/controller/BugInstanceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/controller/CheckstyleErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceClassDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceFieldDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceIntDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceLocalVariableDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceMethodDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstancePropertyDescripiton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceSourceLineDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceStringDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/BugInstanceTypeDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entities/CheckstyleErrorDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entityManager/DatabaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/jsf/entityManager/DatabaseManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/home.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkstylePackage/CheckstyleError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkstylePackage/CheckstyleError_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkstylePackage/CheckstyleFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkstylePackage/CheckstyleFile_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkstylePackage/CheckstyleReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/FindBugsReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/FindBugsBugInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/FindBugsBugInstance_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceField_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceInt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceInt_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceProperty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceProperty_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceString_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/Analysis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/controller/BugInstanceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/controller/CheckstyleErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceClassDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceFieldDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceIntDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceLocalVariableDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceMethodDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstancePropertyDescripiton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceSourceLineDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceStringDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/BugInstanceTypeDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entities/CheckstyleErrorDescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entityManager/DatabaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsf/entityManager/DatabaseManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/checkstylePackage/CheckstyleError_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/checkstylePackage/CheckstyleFile_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/FindBugsBugInstance_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceClass_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceField_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceInt_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceLocalVariable_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceMethod_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceProperty_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceSourceLine_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceString_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/findBugsPackage/reportPackage/bugInstancePackage/FindBugsBugInstanceType_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/databaseManager/DatabaseManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/databaseManager/DatabaseManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/output/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/output/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/wait.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseManager/DatabaseManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseManager/DatabaseManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/output/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/output/controller/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -147,14 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FindBugsReport.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FindBugsReport.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/input/findbugs/FindBugsReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="90">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -162,7 +37,7 @@
       <file leaf-file-name="FindBugsBugInstance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="-1854">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -174,8 +49,8 @@
       <file leaf-file-name="DatabaseManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="411">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,11 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseManagerImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="192" column="5" lean-forward="true" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
+            <state relative-caret-position="652">
+              <caret line="343" column="74" selection-start-line="343" selection-start-column="74" selection-end-line="343" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,6 +84,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -214,6 +110,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BugInstanceClassDescription.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/output/entities/BugInstanceClassDescription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -242,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_javadocVariable_errors.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_localVariableName_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_memberName_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_methodParamPad_errors.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkstyle_noLineWrap_errors.xhtml" />
@@ -289,8 +192,10 @@
         <option value="$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/controller/Analysis.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/wait.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java" />
       </list>
@@ -349,17 +254,15 @@
               <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
               <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
@@ -500,10 +403,10 @@
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32959402" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32819384" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49893162" visible="true" weight="0.33371168" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49893162" visible="true" weight="0.33371168" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.64715445" visible="true" weight="0.24412394" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.64715445" visible="true" weight="0.24412394" />
       <window_info anchor="bottom" id="Analysis" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32576618" />
       <window_info id="Structure" order="5" sideWeight="0.35284552" side_tool="true" weight="0.2815171" />
@@ -714,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/output/entities/BugInstanceClassDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/CheckstyleErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-758">
@@ -850,56 +746,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/input/findbugs/FindBugsReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/detail.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -917,20 +773,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="1435">
+          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/output/entities/BugInstanceClassDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="411">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1854">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -939,8 +836,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="192" column="5" lean-forward="true" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
+        <state relative-caret-position="652">
+          <caret line="343" column="74" selection-start-line="343" selection-start-column="74" selection-end-line="343" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/input/findbugs/FindBugsReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
