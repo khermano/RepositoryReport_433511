@@ -1,21 +1,13 @@
 package databaseManager;
 
-import input.checkstyle.CheckstyleFile;
 import input.findbugs.report.FindBugsBugInstance;
 import output.entities.*;
-
-import javax.ejb.Local;
 import java.math.BigInteger;
 import java.util.List;
 
-@Local
-public interface DatabaseManager {
-
-    void addFiles(List<CheckstyleFile> files);
+public interface FindBugsDatabaseManager {
 
     void addBugInstances(List<FindBugsBugInstance> bugInstances);
-
-    List<CheckstyleErrorDescription> loadCheckstyleErrorDescriptions(String queryString);
 
     List<BugInstanceDescription> loadBugInstances(String queryString);
 

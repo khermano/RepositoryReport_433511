@@ -1,11 +1,13 @@
+databaseManager/FindBugsDatabaseManagerImpl.class
 input/findbugs/report/FindBugsBugInstance.class
 output/controller/BugInstanceController.class
+databaseManager/FindBugsDatabaseManager.class
+databaseManager/CheckstyleDatabaseManager.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceLocalVariable.class
 input/checkstyle/CheckstyleError_.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceInt_.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceLocalVariable_.class
 output/entities/BugInstanceStringDescription.class
-databaseManager/DatabaseManagerImpl.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceInt.class
 input/findbugs/report/FindBugsBugInstance_.class
 input/checkstyle/CheckstyleError.class
@@ -14,6 +16,7 @@ output/controller/HomeController.class
 input/findbugs/FindBugsReport.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceString_.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceString.class
+databaseManager/CheckstyleDatabaseManagerImpl.class
 output/entities/BugInstanceFieldDescription.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceMethod.class
 output/controller/CheckstyleErrorController.class
@@ -25,7 +28,6 @@ input/checkstyle/CheckstyleFile.class
 output/entities/BugInstanceTypeDescription.class
 output/entities/BugInstanceDescription.class
 output/entities/BugInstanceIntDescription.class
-databaseManager/DatabaseManager.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceMethod_.class
 input/checkstyle/CheckstyleReport.class
 input/findbugs/report/bugInstance/FindBugsBugInstanceField.class

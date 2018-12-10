@@ -10,52 +10,52 @@
     <center>
         <h:form>
             <h:panelGrid columns="2" cellpadding="2" cellspacing="2">
-                <h:commandButton value="Checkstyle - All errors" action="#{checkstyleErrorController.returnAllErrors}"/>
-                <h:commandButton value="Checkstyle - LocalVariableName errors" action="#{checkstyleErrorController.returnLocalVariableNameErrors}"/>
+                <h:commandButton value="Checkstyle - All errors" action="#{checkstyleErrorController.findAllCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - LocalVariableName errors" action="#{checkstyleErrorController.findLocalVariableNameCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - MemberName errors" action="#{checkstyleErrorController.returnMemberNameErrors}"/>
-                <h:commandButton value="Checkstyle - AbstractClassName errors" action="#{checkstyleErrorController.returnAbstractClassNameErrors}"/>
+                <h:commandButton value="Checkstyle - MemberName errors" action="#{checkstyleErrorController.findMemberNameCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - AbstractClassName errors" action="#{checkstyleErrorController.findAbstractClassNameCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - ConstantName errors" action="#{checkstyleErrorController.returnConstantNameErrors}"/>
-                <h:commandButton value="Checkstyle - StaticVariableName errors" action="#{checkstyleErrorController.returnStaticVariableNameErrors}"/>
+                <h:commandButton value="Checkstyle - ConstantName errors" action="#{checkstyleErrorController.findConstantNameCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - StaticVariableName errors" action="#{checkstyleErrorController.findStaticVariableNameCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - JavadocMethod errors" action="#{checkstyleErrorController.returnJavadocMethodErrors}"/>
-                <h:commandButton value="Checkstyle - JavadocType errors" action="#{checkstyleErrorController.returnJavadocTypeErrors}"/>
+                <h:commandButton value="Checkstyle - JavadocMethod errors" action="#{checkstyleErrorController.findJavadocMethodCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - JavadocType errors" action="#{checkstyleErrorController.findJavadocTypeCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - JavadocVariable errors" action="#{checkstyleErrorController.returnJavadocVariableErrors}"/>
-                <h:commandButton value="Checkstyle - EmptyLineSeparator errors" action="#{checkstyleErrorController.returnEmptyLineSeparatorErrors}"/>
+                <h:commandButton value="Checkstyle - JavadocVariable errors" action="#{checkstyleErrorController.findJavadocVariableCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - EmptyLineSeparator errors" action="#{checkstyleErrorController.findEmptyLineSeparatorCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - MethodParamPad errors" action="#{checkstyleErrorController.returnMethodParamPadErrors}"/>
-                <h:commandButton value="Checkstyle - NoLineWrap errors" action="#{checkstyleErrorController.returnNoLineWrapErrors}"/>
+                <h:commandButton value="Checkstyle - MethodParamPad errors" action="#{checkstyleErrorController.findMethodParamPadCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - NoLineWrap errors" action="#{checkstyleErrorController.findNoLineWrapCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - SingleSpaceSeparator errors" action="#{checkstyleErrorController.returnSingleSpaceSeparatorErrors}"/>
-                <h:commandButton value="Checkstyle - GenericWhitespace errors" action="#{checkstyleErrorController.returnGenericWhitespaceErrors}"/>
+                <h:commandButton value="Checkstyle - SingleSpaceSeparator errors" action="#{checkstyleErrorController.findSingleSpaceSeparatorCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - GenericWhitespace errors" action="#{checkstyleErrorController.findGenericWhitespaceCheckstyleErrors}"/>
 
-                <h:commandButton value="Checkstyle - OperatorWrap errors" action="#{checkstyleErrorController.returnOperatorWrapErrors}"/>
-                <h:commandButton value="Checkstyle - WhitespaceAround errors" action="#{checkstyleErrorController.returnWhitespaceAroundErrors}"/>
+                <h:commandButton value="Checkstyle - OperatorWrap errors" action="#{checkstyleErrorController.findOperatorWrapCheckstyleErrors}"/>
+                <h:commandButton value="Checkstyle - WhitespaceAround errors" action="#{checkstyleErrorController.findWhitespaceAroundCheckstyleErrors}"/>
 
-                <h:commandButton value="FindBugs - All errors" action="#{bugInstanceController.returnAllErrors}"/>
-                <h:commandButton value="FindBugs - Priority 1 errors" action="#{bugInstanceController.returnPriority1Errors}"/>
+                <h:commandButton value="FindBugs - All errors" action="#{bugInstanceController.findAllFindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Priority 1 errors" action="#{bugInstanceController.findPriority1FindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Priority 2 errors" action="#{bugInstanceController.returnPriority2Errors}"/>
-                <h:commandButton value="FindBugs - Priority 3 errors" action="#{bugInstanceController.returnPriority3Errors}"/>
+                <h:commandButton value="FindBugs - Priority 2 errors" action="#{bugInstanceController.findPriority2FindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Priority 3 errors" action="#{bugInstanceController.findPriority3FindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Rank scariest errors" action="#{bugInstanceController.returnRankScariestErrors}"/>
-                <h:commandButton value="FindBugs - Rank scary errors" action="#{bugInstanceController.returnRankScaryErrors}"/>
+                <h:commandButton value="FindBugs - Rank scariest errors" action="#{bugInstanceController.findRankScariestFindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Rank scary errors" action="#{bugInstanceController.findRankScaryFindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Rank troubling errors" action="#{bugInstanceController.returnRankTroublingErrors}"/>
-                <h:commandButton value="FindBugs - Rank concern bugs errors" action="#{bugInstanceController.returnRankConcernBugsErrors}"/>
+                <h:commandButton value="FindBugs - Rank troubling errors" action="#{bugInstanceController.findRankTroublingFindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Rank concern bugs errors" action="#{bugInstanceController.findRankConcernBugsFindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Category CORRECTNESS errors" action="#{bugInstanceController.returnCategoryCorrectnessErrors}"/>
-                <h:commandButton value="FindBugs - Category BAD_PRACTICE errors" action="#{bugInstanceController.returnCategoryBadPracticeErrors}"/>
+                <h:commandButton value="FindBugs - Category CORRECTNESS errors" action="#{bugInstanceController.findCategoryCorrectnessFindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Category BAD_PRACTICE errors" action="#{bugInstanceController.findCategoryBadPracticeFindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Category STYLE errors" action="#{bugInstanceController.returnCategoryStyleErrors}"/>
-                <h:commandButton value="FindBugs - Category MT_CORRECTNESS errors" action="#{bugInstanceController.returnCategoryMtCorrectnessErrors}"/>
+                <h:commandButton value="FindBugs - Category STYLE errors" action="#{bugInstanceController.findCategoryStyleFindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Category MT_CORRECTNESS errors" action="#{bugInstanceController.findCategoryMtCorrectnessFindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Category MALICIOUS_CODE errors" action="#{bugInstanceController.returnCategoryMaliciousCodeErrors}"/>
-                <h:commandButton value="FindBugs - Category PERFORMANCE errors" action="#{bugInstanceController.returnCategoryPerformanceErrors}"/>
+                <h:commandButton value="FindBugs - Category MALICIOUS_CODE errors" action="#{bugInstanceController.findCategoryMaliciousCodeFindBugsErrors}"/>
+                <h:commandButton value="FindBugs - Category PERFORMANCE errors" action="#{bugInstanceController.findCategoryPerformanceFindBugsErrors}"/>
 
-                <h:commandButton value="FindBugs - Category I18N errors" action="#{bugInstanceController.returnCategoryI18nErrors}"/>
+                <h:commandButton value="FindBugs - Category I18N errors" action="#{bugInstanceController.findCategoryI18NFindBugsErrors}"/>
             </h:panelGrid>
         </h:form>
     </center>

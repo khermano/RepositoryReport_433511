@@ -1,8 +1,9 @@
 package output.controller;
 
+import databaseManager.CheckstyleDatabaseManager;
 import input.checkstyle.CheckstyleReport;
 import input.findbugs.FindBugsReport;
-import databaseManager.DatabaseManager;
+import databaseManager.FindBugsDatabaseManager;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -17,10 +18,13 @@ import java.util.Map;
 @SessionScoped
 public class HomeController {
     private static final String REPOSITORY_WEB_URL = "https://github\\.com/.+/.+\\.git";
-    private static final String REPOSITORY_SSH_KEY = "git@github\\.com:.+/.+\\.git";
+    private static final String REPOSITORY_SSH_LINK = "git@github\\.com:.+/.+\\.git";
+    private String tmpDirectory = System.getProperty("java.io.tmpdir");
 
     @EJB
-    private DatabaseManager databaseManager;
+    private FindBugsDatabaseManager findBugsDatabaseManager;
+    @EJB
+    private CheckstyleDatabaseManager checkstyleDatabaseManager;
     private String repositoryLink;
     private String repositoryName;
 
@@ -33,15 +37,19 @@ public class HomeController {
     }
 
     public String analyseRepository() throws IOException, InterruptedException, JAXBException {
-        if (repositoryLink != null && ((repositoryLink.matches(REPOSITORY_WEB_URL)) || (repositoryLink.matches(REPOSITORY_SSH_KEY)))) {
+        if (repositoryLink != null) {
+            String[] repositoryLinkParts = repositoryLink.split("\\.")[1].split("/");
+
             if (repositoryLink.matches(REPOSITORY_WEB_URL)) {
-                repositoryName = repositoryLink.split("\\.")[1].split("/")[2];
-            } 
-            else {
-                repositoryName = repositoryLink.split("\\.")[1].split("/")[1];
+                repositoryName = repositoryLinkParts[2];
+            } else if (repositoryLink.matches(REPOSITORY_SSH_LINK)) {
+                repositoryName = repositoryLinkParts[1];
+            } else {
+                return "fail";
             }
 
-            databaseManager.cleanTables();
+            checkstyleDatabaseManager.cleanTables();
+            findBugsDatabaseManager.cleanTables();
             setUpEnvironment();
             unzipDeployedFiles();
             generateReports();
@@ -49,13 +57,12 @@ public class HomeController {
             persistFindBugsData();
             
             return "possible_outputs";
+        } else {
+            return "fail";
         }
-        return "fail";
     }
 
     private void setUpEnvironment() throws InterruptedException, IOException {
-        String tmpDirectory = System.getProperty("java.io.tmpdir");
-
         ProcessBuilder processBuilder = new ProcessBuilder("rm -rf deployedWar/".split("\\s+"));
         processBuilder.directory(new File(tmpDirectory));
 
@@ -65,8 +72,9 @@ public class HomeController {
 
     private void unzipDeployedFiles() throws InterruptedException, IOException {
         String deployDirectory = System.getProperty("jboss.home.dir") + "/standalone/deployments";
-        
-        ProcessBuilder processBuilder = new ProcessBuilder("unzip RepositoryReport_433511.war -d /tmp/deployedWar".split("\\s+"));
+        String command = "unzip RepositoryReport_433511.war scripts/* -d " + tmpDirectory + "/deployedWar";
+
+        ProcessBuilder processBuilder = new ProcessBuilder(command.split("\\s+"));
         processBuilder.directory(new File(deployDirectory));
         
         Process process = processBuilder.start();
@@ -74,12 +82,14 @@ public class HomeController {
     }
 
     private void generateReports() throws InterruptedException, IOException {
-        ProcessBuilder processBuilder = new ProcessBuilder("sh /tmp/deployedWar/scripts/GenerateFindBugsAndCheckstyleReports.sh".split("\\s+"));
+        String command = "sh " + tmpDirectory + "/deployedWar/scripts/GenerateFindBugsAndCheckstyleReports.sh";
+        ProcessBuilder processBuilder = new ProcessBuilder(command.split("\\s+"));
         
         Map<String, String> environment = processBuilder.environment();
         
         environment.put("repositoryLink", repositoryLink);
         environment.put("repositoryName", repositoryName);
+        environment.put("tmpDirectory", tmpDirectory);
         
         Process process = processBuilder.start();
         process.waitFor();
@@ -89,18 +99,20 @@ public class HomeController {
         JAXBContext checkstyleContext = JAXBContext.newInstance(CheckstyleReport.class);
 
         Unmarshaller unmarshaller = checkstyleContext.createUnmarshaller();
-        CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File("/tmp/Reports/CheckstyleReport.xml"));
+        String checkstyleReportPath = tmpDirectory + "/Reports/CheckstyleReport.xml";
+        CheckstyleReport report = (CheckstyleReport) unmarshaller.unmarshal(new File(checkstyleReportPath));
 
-        databaseManager.addFiles(report.getFileList());
+        checkstyleDatabaseManager.addFiles(report.getFileList());
     }
 
     private void persistFindBugsData() throws JAXBException {
         JAXBContext findbugsContext = JAXBContext.newInstance(FindBugsReport.class);
 
         Unmarshaller unmarshaller = findbugsContext.createUnmarshaller();
-        FindBugsReport report = (FindBugsReport) unmarshaller.unmarshal(new File("/tmp/Reports/FindBugsReport.xml"));
+        String findbugsReportPath = tmpDirectory + "/Reports/FindBugsReport.xml";
+        FindBugsReport report = (FindBugsReport) unmarshaller.unmarshal(new File(findbugsReportPath));
 
-        databaseManager.addBugInstances(report.getFindBugsBugInstanceList());
+        findBugsDatabaseManager.addBugInstances(report.getFindBugsBugInstanceList());
     }
 
 }

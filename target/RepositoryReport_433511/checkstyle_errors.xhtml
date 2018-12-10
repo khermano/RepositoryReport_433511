@@ -9,34 +9,34 @@
 <h:body>
     <h3>Checkstyle error list</h3>
     <h:form>
-        <h:dataTable var="e" value="#{checkstyleErrorController.getErrorDescriptionList()}" border="1" cellpadding="2" cellspacing="2">
+        <h:dataTable var="checkstyleError" value="#{checkstyleErrorController.getErrorDescriptionList()}" border="1" cellpadding="2" cellspacing="2">
             <h:column>
                 <f:facet name="header">ErrorId</f:facet>
-                <h:outputText value="${e.errorId}"></h:outputText>
+                <h:outputText value="${checkstyleError.errorId}"></h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">ClassLine</f:facet>
-                <h:outputText value="${e.classLine}"></h:outputText>
+                <h:outputText value="${checkstyleError.classLine}"></h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">ClassColumn</f:facet>
-                <h:outputText value="${e.classColumn}"></h:outputText>
+                <h:outputText value="${checkstyleError.classColumn}"></h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">ErrorMessage</f:facet>
-                <h:outputText value="${e.errorMessage}"></h:outputText>
+                <h:outputText value="${checkstyleError.errorMessage}"></h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">ErrorSeverity</f:facet>
-                <h:outputText value="${e.errorSeverity}"></h:outputText>
+                <h:outputText value="${checkstyleError.errorSeverity}"></h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">CheckSource</f:facet>
-                <h:outputText value="${e.checkSource}"></h:outputText>
+                <h:outputText value="${checkstyleError.checkSource}"></h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">FileName</f:facet>
-                <h:outputText value="${e.fileName}"></h:outputText>
+                <h:outputText value="${checkstyleError.fileName}"></h:outputText>
             </h:column>
         </h:dataTable>
     </h:form>

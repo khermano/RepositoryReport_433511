@@ -3,12 +3,14 @@
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstancePropertyDescripiton.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/controller/HomeController.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/controller/BugInstanceController.java
+/home/khermano/Devel/RepositoryReport_433511/src/main/java/databaseManager/FindBugsDatabaseManagerImpl.java
+/home/khermano/Devel/RepositoryReport_433511/src/main/java/databaseManager/CheckstyleDatabaseManager.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceField.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceType.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceMethod.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceClassDescription.java
-/home/khermano/Devel/RepositoryReport_433511/src/main/java/databaseManager/DatabaseManagerImpl.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceStringDescription.java
+/home/khermano/Devel/RepositoryReport_433511/src/main/java/databaseManager/CheckstyleDatabaseManagerImpl.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceLocalVariable.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceIntDescription.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/CheckstyleErrorDescription.java
@@ -17,9 +19,9 @@
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/FindBugsBugInstance.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceProperty.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceTypeDescription.java
+/home/khermano/Devel/RepositoryReport_433511/src/main/java/databaseManager/FindBugsDatabaseManager.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceClass.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceFieldDescription.java
-/home/khermano/Devel/RepositoryReport_433511/src/main/java/databaseManager/DatabaseManager.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceMethodDescription.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceLocalVariableDescription.java
 /home/khermano/Devel/RepositoryReport_433511/src/main/java/output/entities/BugInstanceDescription.java
