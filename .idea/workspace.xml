@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7705cb3a-cd2f-4e08-8ba1-7fc4001853ed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/expired.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/databaseManager/DatabaseManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/checkstyle/CheckstyleReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/FindBugsReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/FindBugsReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/FindBugsBugInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceLocalVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceLocalVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceSourceLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceSourceLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/findbugs/report/bugInstance/FindBugsBugInstanceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/output/controller/CheckstyleErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/CheckstyleErrorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/findbugs_errors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/findbugs_errors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/GenerateFindBugsAndCheckstyleReports.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/GenerateFindBugsAndCheckstyleReports.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/databaseManager/DatabaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/output/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/WEB-INF/classes/output/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_errors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/checkstyle_errors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511/findbugs_errors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511/findbugs_errors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/databaseManager/DatabaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/output/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/output/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,45 +17,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FindBugsDatabaseManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="314" column="127" selection-start-line="314" selection-start-column="127" selection-end-line="314" selection-end-column="127" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5713#5751#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BugInstanceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BugInstanceClassDescription.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/output/entities/BugInstanceClassDescription.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/output/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkstyle_errors.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="expired.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/expired.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/detail.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -102,20 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fail.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/fail.xhtml">
+      <file leaf-file-name="home.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="findbugs_errors.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/findbugs_errors.xhtml">
+      <file leaf-file-name="fail.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/fail.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="38" column="98" selection-start-line="38" selection-start-column="98" selection-end-line="38" selection-end-column="98" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -137,18 +106,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#763#801#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckstyleDatabaseManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,8 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/jsf/Analysis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jsf/entities/CheckstyleErrorDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceTypeDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceStringDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsf/entities/BugInstanceSourceLineDescription.java" />
@@ -229,6 +184,8 @@
         <option value="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/GenerateFindBugsAndCheckstyleReports.sh" />
         <option value="$PROJECT_DIR$/src/main/java/output/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/expired.xhtml" />
       </list>
     </option>
   </component>
@@ -384,6 +341,14 @@
             <path>
               <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
               <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RepositoryReport_433511" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RepositoryReport_433511" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -506,6 +471,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3291714" />
@@ -552,8 +518,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_staticVariableName_errors.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_whitespaceAround_errors.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/checkstyle_config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -568,13 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/detail.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
         </state>
       </provider>
     </entry>
@@ -600,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -786,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -868,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/fail.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/findbugs_errors.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -922,6 +858,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkstyle_errors.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/fail.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/detail.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/expired.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
