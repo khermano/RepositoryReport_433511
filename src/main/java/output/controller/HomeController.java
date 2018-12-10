@@ -4,6 +4,8 @@ import databaseManager.CheckstyleDatabaseManager;
 import input.checkstyle.CheckstyleReport;
 import input.findbugs.FindBugsReport;
 import databaseManager.FindBugsDatabaseManager;
+import org.apache.commons.io.FileUtils;
+
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -50,7 +52,10 @@ public class HomeController {
 
             checkstyleDatabaseManager.cleanTables();
             findBugsDatabaseManager.cleanTables();
-            setUpEnvironment();
+            File deployedWarFile = new File(tmpDirectory + "/deployedWar");
+            FileUtils.deleteDirectory(deployedWarFile);
+            File reportsFile = new File(tmpDirectory + "/Reports");
+            FileUtils.deleteDirectory(reportsFile);
             unzipDeployedFiles();
             generateReports();
             persistCheckstyleData();
@@ -60,14 +65,6 @@ public class HomeController {
         } else {
             return "fail";
         }
-    }
-
-    private void setUpEnvironment() throws InterruptedException, IOException {
-        ProcessBuilder processBuilder = new ProcessBuilder("rm -rf deployedWar/".split("\\s+"));
-        processBuilder.directory(new File(tmpDirectory));
-
-        Process process = processBuilder.start();
-        process.waitFor();
     }
 
     private void unzipDeployedFiles() throws InterruptedException, IOException {
