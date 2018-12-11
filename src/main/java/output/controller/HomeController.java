@@ -53,9 +53,13 @@ public class HomeController {
             checkstyleDatabaseManager.cleanTables();
             findBugsDatabaseManager.cleanTables();
             File deployedWarFile = new File(tmpDirectory + "/deployedWar");
-            FileUtils.deleteDirectory(deployedWarFile);
+            if (deployedWarFile.exists()) {
+                FileUtils.deleteDirectory(deployedWarFile);
+            }
             File reportsFile = new File(tmpDirectory + "/Reports");
-            FileUtils.deleteDirectory(reportsFile);
+            if (reportsFile.exists()) {
+                FileUtils.deleteDirectory(reportsFile);
+            }
             unzipDeployedFiles();
             generateReports();
             persistCheckstyleData();
