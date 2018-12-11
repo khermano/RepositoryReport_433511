@@ -13,7 +13,7 @@ import java.util.List;
 @Stateless
 public class CheckstyleDatabaseManagerImpl implements CheckstyleDatabaseManager{
 
-    @PersistenceContext(unitName = "testPersistenceUnit")
+    @PersistenceContext(unitName = "reportPersistenceUnit")
     private EntityManager em;
 
     public void addFiles(List<CheckstyleFile> files) {

@@ -31,7 +31,7 @@ import java.util.List;
 @Stateless
 public class FindBugsDatabaseManagerImpl implements FindBugsDatabaseManager {
 
-    @PersistenceContext(unitName = "testPersistenceUnit")
+    @PersistenceContext(unitName = "reportPersistenceUnit")
     private EntityManager em;
 
 
