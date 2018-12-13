@@ -4,7 +4,9 @@ import input.findbugs.report.FindBugsBugInstance;
 import output.entities.*;
 import java.math.BigInteger;
 import java.util.List;
+import javax.ejb.Local;
 
+@Local
 public interface FindBugsDatabaseManager {
 
     void addBugInstances(List<FindBugsBugInstance> bugInstances);
