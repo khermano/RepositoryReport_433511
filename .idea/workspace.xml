@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7705cb3a-cd2f-4e08-8ba1-7fc4001853ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RepositoryReport_433511.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RepositoryReport_433511.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +28,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindBugsDatabaseManagerImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FindBugsDatabaseManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3705">
               <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckstyleDatabaseManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindBugsDatabaseManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,8 +131,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/possible_outputs.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/output/controller/CheckstyleErrorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/output/controller/BugInstanceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/expired.xhtml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -122,6 +143,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/databaseSetUp.sh" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/RepositoryReport_433511-ds.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java" />
       </list>
     </option>
   </component>
@@ -500,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/output/entities/BugInstanceClassDescription.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -553,13 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -656,6 +665,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3705">
           <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/CheckstyleDatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/databaseManager/FindBugsDatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
