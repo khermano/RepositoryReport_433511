@@ -20,10 +20,13 @@ GitHub Java content repository source code analyzer
          - download from http://wildfly.org/downloads/
 2. Set the JBOSS_HOME variable
     - command -- `export JBOSS_HOME=/path/to/wfly`
-3. Execute WildFly - command -- $JBOSS_HOME/bin/standalone.sh`
+3. Start WildFly - command -- `$JBOSS_HOME/bin/standalone.sh`
 4. Set up database and dataSource
     - you can use a script databaseSetUp.sh located in RepositoryReport_433511/src/main/webapp/scripts/
     - but you have to change the path in the last row of the file to /yourPathToProject/RepositoryReport_433511/src/main/webapp/scripts/addDriverAndCreateDatasource.cli
     - commands -- `chmod +x /pathToFile/databaseSetUp.sh`, `/yourPathToProject/RepositoryReport_433511/src/main/webapp/scripts/databaseSetUp.sh`
-5. Execute application in your web browser with url http://localhost:8080/RepositoryReport_433511/faces/home.xhtml
+5. Compile this project - command -- `mvn clean install`
+6. Deploy it to WildFly
+    - one way is copy it to the deployments - commmand -- `cp /yourPathToProject/RepositoryReport_433511/target/RepositoryReport_433511.war $JBOSS_HOME/standalone/deployments`
+7. Execute application in your web browser with url http://localhost:8080/RepositoryReport_433511/faces/home.xhtml
 
