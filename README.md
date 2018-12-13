@@ -22,6 +22,9 @@ GitHub Java content repository source code analyzer
     - command -- `export JBOSS_HOME=/path/to/wfly`
 3. Start WildFly - command -- `$JBOSS_HOME/bin/standalone.sh`
 4. Set up database and dataSource
+    - Install mysql, create user and database:
+        - commands -- `sudo dnf -y install mysql-server mysql`, `sudo systemctl start mariadb.service`
+        - commands in mysql -- `CREATE USER 'databaseUser'@'localhost' IDENTIFIED BY '12*ab*34';`, `CREATE DATABASE reports;`, `GRANT ALL PRIVILEGES ON  reports.* TO 'databaseUser'@'localhost';`
     - you can use a script databaseSetUp.sh located in RepositoryReport_433511/src/main/webapp/scripts/
     - but you have to change the path in the last row of the file to /yourPathToProject/RepositoryReport_433511/src/main/webapp/scripts/addDriverAndCreateDatasource.cli
     - commands -- `chmod +x /pathToFile/databaseSetUp.sh`, `/yourPathToProject/RepositoryReport_433511/src/main/webapp/scripts/databaseSetUp.sh`
